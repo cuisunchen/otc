@@ -1,0 +1,153 @@
+@import "../assets/css/config/Vars";
+
+.content-set-asset-pwd1 {
+  position: relative;
+  background: white;
+  width: 100%;
+  height: 100%;
+  .mu-text-field-hint {
+    color: #A9B2C3;
+  }
+  .mu-text-field-hint {
+    line-height: 48px;
+    padding-left: toRem(2);
+  }
+  .mu-text-field-input {
+    text-indent: 4px;
+    height: 48px;
+  }
+  
+  .title {
+    font-size: toRem(33);
+    padding-top: 1.2em;
+    color: #242932;
+    padding-left: 1em;
+    text-align: left;
+    font-weight: 600;
+  }
+  .top {
+    width: 100%;
+    height: toRem(44);
+    background: white;
+    .center {
+      position: absolute;
+      width: 100%;
+      top: 1em;
+      color: $white;
+      font-size: 1em;
+      text-align: center;
+      line-height: 1;
+    }
+    .right {
+      position: absolute;
+      right: 1em;
+      top: 1em;
+      color: $white;
+      font-size: 1em;
+      line-height: 1;
+    }
+    .left {
+      position: absolute;
+      top: 0.8em;
+      left: 1em;
+      width: 1.35em;
+      height: 1.35em;
+      background: url("../assets/image/arrow_left.png") no-repeat center;
+      background-size: cover;
+    }
+  }
+  .p-safe-tip {
+    margin-top: 3em;
+    text-align: left;
+    padding-left: 2.5em;
+    font-size: 0.9em;
+    color: #0a2463;
+    padding-right: 2.5em;
+  }
+  .banner {
+    width: 100%;
+    height: 4em;
+    display: flex;
+    margin-top: 2em;
+    padding-left: 2.5em;
+    .logo {
+      height: 2.8em;
+      width: 13em;
+      background: url($IMAGE_BASE_URL+"large_logo.png") no-repeat left;
+      background-size: auto 100%;
+    }
+  }
+  .login {
+    //    width: 100%;
+    padding: toRem(35) toRem(26) 0 toRem(30);
+    //    margin-top: 2em;
+    text-align: left;
+    background: #ffffff;
+    .input-zone {
+      .mu-text-field-content {
+        display: block;
+        height: 100%;
+        .mu-text-field-focus-line {
+          background-color: $main_color;
+          height: 1px;
+        }
+      }
+    }
+  }
+  .pw-forget-btn {
+    margin: 0px;
+    text-align: left;
+    font-size: 0.85em;
+    color: $blue;
+  }
+  .captcha-zone {
+    position: relative;
+  }
+  .captcha {
+    position: absolute;
+    bottom: 1.4em;
+    width: 7.5em;
+    height: 2em;
+    right: 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .captcha-btn {
+    width: 100%;
+    height: 2em;
+    color: #0095ff;
+    text-align: center;
+    line-height: 2em;
+    font-size: 1em;
+    background: #f7f7f7;
+    text-decoration: underline;
+    border: 0px;
+  }
+  .btn {
+    line-height: 2.5;
+    font-size: 1.12em;
+    height: toRem(50);
+    border-radius: 3em;
+    width: toRem(317);
+    margin: toRem(65) auto 0 auto;
+    // margin-left: 2%;
+  }
+  .mu-toast{
+    width:toRem(231);
+    height:auto;
+    background:rgba(0,0,0,1);
+    border-radius:10px;
+    opacity:0.6;
+    line-height: normal;
+    white-space: normal;
+    bottom: auto;
+    padding: 1em 2em;
+    color: #fff;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(toRem(-231 / 2), toRem(-123 / 2));
+    margin: 0 auto;
+    font-size: 1em;
+  }
+}

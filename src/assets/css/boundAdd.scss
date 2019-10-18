@@ -1,0 +1,153 @@
+@import "../assets/css/config/Vars";
+body{
+    background: $white;
+}
+.top-order{
+    width: 100%;
+    height: 3em;
+    background: $topBg;
+    .left-order {
+        position: absolute;
+        top:0.8em;
+        left: 1em; 
+        width: 1.35em;
+        height: 1.35em;
+        background: url("../assets/image/arrow_left.png") no-repeat center;
+        background-size: cover;
+        button{
+            background: transparent;
+        }
+      } 
+    .center-order{
+        position: absolute;
+        width: 100%;
+        top: 1em;
+        color: $white;
+        font-size: 1em;
+        text-align: center;
+        line-height: 1;
+    }
+    .paixu-zone{
+        position: absolute;
+        top: 0.15em;
+        right: 0em;
+        text-align: right;
+        color: $white;
+        font-size: 1em;
+    
+    }
+}
+.mu-appbar{
+    background-color:$blue;
+}
+.content-notice-zone{
+    position: fixed;
+    top:0px;
+    width: 100%;
+    max-width: 640px;
+    z-index: 999;
+    background: #fff;
+    height: 100%;
+}
+.top-fixed{
+    position: fixed;
+    top:0px;
+    width: 100%;
+    max-width: 640px;
+    z-index: 99;
+}
+.mu-raised-button-primary{
+    background-color:$blue;
+}
+.content{
+    background: $white;
+    position: relative;
+    .hint{
+        padding:0px 1em;
+        font-size: 1em;
+        line-height: 1.6;
+        p{
+            line-height: 1.6;
+            padding: 1em 0px;
+            border-bottom: 1px solid $border;
+            margin: 0;
+            text-align: left;
+        }
+        .tel-zone{
+            padding-top: 0.5em 0px;
+            border-bottom: 1px solid $border;
+            background: #ede7f6;
+            margin-bottom: 1em;
+        }
+        .input-zone{
+            width: 10em;
+            font-size: 1.2em;
+            text-align: center;
+        }
+        .bound_add{
+            text-align: left;
+            .mu-text-field-label{
+                font-size: 1em;
+            }
+            .mu-text-field-input{
+                color: $bannerft;
+            }
+        }
+        .btn{
+            line-height: 2.4;
+            font-size: 1.12em;
+            height: auto;
+            margin-top: 1em;
+        }
+        .intr-zone{
+            padding-top: 0.5em 0px;
+            border-bottom: 1px solid $border;
+            background: #ede7f6;
+            margin-bottom: 1em;
+            p{
+                line-height: 1.6;
+                padding: 1em;
+                padding-bottom: 0px;
+                margin: 0;
+                border: 0px;
+                text-align: left;
+                i{
+                    color:$main-min;
+                    word-wrap:break-word;
+                    font-size: 0.9em;
+                }
+            }
+            h2{
+                margin: 0.3em 0px;
+                font-size: 1.2em;
+                color: $black;
+            }
+            .hint-ft{
+                margin: 0px;
+                padding: 0px;  
+                text-align: center;
+                color:$main-min;
+                margin-bottom:1em;
+            }
+        }
+    }
+ 
+    .mu-toast{
+        width:toRem(231);
+        height:auto;
+        background:rgba(0,0,0,1);
+        border-radius:10px;
+        opacity:0.6;
+        line-height: normal;
+        white-space: normal;
+        bottom: auto;
+        padding: 1em 2em;
+        color: #fff;
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(toRem(-231 / 2), toRem(-123 / 2));
+        margin: 0 auto;
+        font-size: 1em;
+      }
+}

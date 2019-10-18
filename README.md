@@ -1,2 +1,2 @@
 # otc
-聚同技术
+otc for cx

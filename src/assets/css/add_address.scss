@@ -1,0 +1,336 @@
+@import "../assets/css/config/Vars";
+
+
+.content{ 
+    background: transparent;
+    position: relative;
+    padding-bottom:3.2em;
+    .top{
+        height: toRem(44);
+        width: 100%;
+        background:  $white;
+        top: 0em;
+        left: 0em;
+        z-index: 999;
+        .center{
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            height:toRem(44);
+            line-height:toRem(44);
+            font-family:PingFangSC;
+            font-weight:500;
+            color:rgba(46,53,70,1);
+        }
+        .left {
+            position: absolute;
+            top:0.8em;
+            left: 1em; 
+            width:1.35em;
+            height: 1.35em;
+            background: url("../assets/image/arrow_left.png") no-repeat center;
+            background-size: cover;
+          }
+        .right {
+         position: absolute;
+         top: 1em;
+         color: $white;
+         font-size: 1em;
+         right: 1em; 
+         line-height: 1;
+        }
+    }
+    .publish-crypto-currency-item{
+        display: flex;
+        padding: 0.5em 1em;
+        background: $white;
+        margin-bottom: 0em;
+        position: relative;
+        height: 3.3em;
+        border-bottom: 1px solid #F3F5F7;
+        p{
+            position: absolute;
+            bottom: 0.6em;
+            left: 1.2em;
+            margin: 0 0;
+            padding: 0 0 0 0em;
+            color: $hint;
+            font-size: 0.85em;
+        }
+        span{
+            color: #4E586E;
+            font-size:  1em;
+            margin-right: 0.5em;
+            width: 7em;
+            display: inline-block;
+            text-align: left;
+            padding-top: 0.6em;
+        }
+        .mu-dropDown-menu-text-overflow {
+            white-space: nowrap;
+            overflow: hidden;
+            width: 100%;
+            text-align: left;
+            
+            /deep/ .mu-text-field-content{
+                padding-top: 0px;
+                padding-bottom: 0px;
+                /deep/.mu-dropDown-menu{
+                    font-size: 0.7em;
+                }
+                /deep/.mu-text-field-focus-line{
+                    height: 0px;
+                }
+                /deep/.mu-text-field-line{
+                    height: 0px;
+                }
+            }
+            
+        }
+
+     
+    }
+    .google-hint-zone{
+        line-height: 1.2;
+        background: #FFA100;
+        padding: 0.6em 1em;
+        color: $white;
+        text-align: left;
+        span{
+            color: $white;
+            font-size: 0.85em;
+        }
+    }
+    .p1{
+        margin: 0 0;
+        padding: 1em 1em 0.5em 1em;
+        font-size: 0.8em;
+        color:  $C404040;
+        text-align:justify; 
+        text-justify:inter-ideograph;
+    }
+    .p2{
+        margin: 0 0;
+        padding: 0.25em 1em;
+       
+        color:  $C404040;
+        text-align:justify; 
+        text-justify:inter-ideograph;
+        span{
+            font-size: 0.8em;
+        }
+    }
+    .user-google{
+        background: $white;
+        line-height: 2.8;
+        padding: 0px 1em;
+        text-align: left;
+        margin: 0px;
+    }
+    .qrcode-zone{
+        background: $white;
+        border-top:1px solid $border;
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, .15)
+    }
+    .p3{
+        margin: 0 0;
+        padding: 1em 1em 1em 1em;
+        font-size: 0.85em;
+        color:  $C404040;
+        // text-align:justify; 
+        // text-justify:inter-ideograph;
+        font-weight: 600;
+        padding-bottom: 0px;
+        span{
+            color:$blue;
+            font-weight: 600;
+        }
+    }
+
+    .p4{
+        margin: 0 0;
+        padding: 0em 0em;
+        font-size: 0.8em;
+        color:  $C404040;
+        text-align: center;  
+    }
+
+    .login{
+        width: 100%;
+        padding: 0.5em 2.5em 1.5em 2.5em;
+        text-align: left;
+        .input-zone{
+         .mu-text-field-content {
+             display: block;
+             height: 100%;
+             padding-bottom: 1em;
+             padding-top: 0.5em;
+         }
+        }
+       .clause {
+         margin-top: 0.1em;
+         font-size: 0.8em;
+         span {
+           color: $lGray;
+         }
+         a {
+           color: $main;
+           text-decoration: none;
+         }
+       }
+        
+    }
+    .google-input-zone{
+        // margin-top: 0.6em;
+        &.wraper{
+            border-top:10px solid #f3f5f7;
+        }
+        /deep/{
+            .mu-text-field-hint{
+
+            }
+        }
+        
+    }
+    .google-btn-zone{
+        padding: 1em;
+        padding-top:3em;
+        // .btn{
+        //     background: $blue;
+        // }
+    }
+    .google-input{
+        display: flex;
+        background: $white;
+        border-bottom: 1px solid $border;
+        padding: 0px 1em;
+        position: relative;
+        height: toRem(50);
+        line-height: toRem(50);
+        .add_address{
+            padding:0;
+            margin:0px 1em;
+        }
+        .label{
+            min-width:toRem(80);
+            text-align: left;
+        }
+        span{
+            font-size: 0.8em;
+            white-space : nowrap; 
+            margin-top: 1.0em;
+        }
+        .publish-crypto-currency-item /deep/ {
+            height: toRem(50);
+            line-height: toRem(50);
+            font-size: 14px;
+            color:#A9B2C3;
+        }
+        .google-input-zone{
+            .label{
+                font-family:PingFangSC;
+                font-weight:500;
+                color:rgba(78,88,110,1);
+            }
+            /deep/ .mu-text-field-content{
+                font-size: 0.8em;
+                padding: 0px;
+                margin-top: 0px;
+                text-align: left;
+                // padding-left: 2em;
+                .mu-text-field-hint{
+                    height: toRem(50);
+                    line-height: toRem(50);
+                    font-size: 14px;
+                    color:#A9B2C3;
+                }
+                .mu-text-field-input{
+                    height: toRem(50);
+                    line-height: toRem(50);
+                }
+                .mu-text-field-line{
+                    height: 0px;
+                }
+                .mu-text-field-focus-line{
+                    height: 0px;
+                }
+            }
+        }
+        .div-send-code{
+            cursor:pointer;
+            position: absolute;
+            right: 1em;
+            color: $white;
+            padding: 0.3em 0.5em;
+            padding-bottom: 0.4em;
+            border-radius: 0.2em;
+            span{
+                height:toRem(20);
+                font-family:PingFangSC;
+                font-weight:500;
+                color:rgba(0,94,228,1);
+                line-height:toRem(20);
+            }
+        }
+    }
+    .captcha-zone{
+        margin-top: 0.6em;
+        background: $white;
+    }
+    .captcha-zone{
+        position: relative;
+        .div-send-code{
+         position: absolute;
+         bottom: 1.4em;
+         width: 7.5em;
+         height: 2em;
+         right: 0px;
+         background-size: cover;
+         background-repeat: no-repeat;
+          background:#1e6aaa; 
+          text-align: center; 
+          color: #fff; 
+          line-height:2em;
+        }
+    }
+    .captcha{
+         position: absolute;
+         bottom: 1.4em;
+         width: 7.5em;
+         height: 2em;
+         right: 0px;
+         background-size: cover;
+         background-repeat: no-repeat;
+    }
+    .btn{
+        line-height: 2.5;
+        font-size: 1.12em;
+        margin-top: 3em;
+        background:#FFA100;
+        border-radius: 3em;
+        margin: 1em auto 1em auto;
+        width:toRem(345);
+        height:toRem(50);
+        background:rgba(0,94,228,1);
+        border-radius:toRem(4);
+     }
+     .mu-toast{
+        width:toRem(231);
+        height:auto;
+        background:rgba(0,0,0,1);
+        border-radius:10px;
+        opacity:0.6;
+        line-height: normal;
+        white-space: normal;
+        bottom: auto;
+        padding: 1em 2em;
+        color: #fff;
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(toRem(-231 / 2), toRem(-123 / 2));
+        margin: 0 auto;
+        font-size: 1em;
+    }
+  
+}

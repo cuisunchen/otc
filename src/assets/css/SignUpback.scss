@@ -1,0 +1,287 @@
+@import "../assets/css/config/Vars";
+
+.content-sign-up{
+    position: relative;
+    background: $bg;
+    width: 100%;
+    height: 100%;
+    .top{
+        width: 100%;
+        height: 3em;
+        background: $bg; 
+        position: fixed;
+        z-index: 999;
+        max-width: 640px;
+        top: 0px;
+
+        .center{
+            position: absolute;
+            width: 100%;
+            top: 1em;
+            color: $white;
+            font-size: 1em;
+            text-align: center;
+            line-height: 1;
+          
+        }
+        .right{
+            position: absolute;
+            right: 1em;
+            top: 1em;
+            color: $white;
+            font-size: 1em;
+            line-height: 1;
+        }
+        .left {
+            position: absolute;
+            top:0.8em;
+            left: 1em; 
+            // width: 1.35em;
+            width: 1.35em;
+            height: 1.35em;
+            background: url("../assets/image/arrow_left.png") no-repeat center;
+            background-size: cover;
+          }
+    }
+    .banner {
+        width: 100%;
+        height: 4em;
+        display: flex;
+        margin-top:2em;
+        padding-left: 2.5em;
+        .logo {
+          height: 2.8em;
+          width:13em; 
+          background: url($IMAGE_BASE_URL+"large_logo.png") no-repeat left;
+          background-size:auto 100%;
+        }
+      }
+   .login{
+        width: 90%;
+        padding:1em  1em 1em 1em;
+        margin-left: 5%;
+        background: #ffffff;
+        text-align: left;
+        margin-top: 1.5em;
+
+       .input-zone{
+        .mu-text-field-content {
+            display: block;
+            height: 100%;
+            padding-bottom: 1em;
+            padding-top: 0.5em;
+            .mu-text-field-focus-line{
+                background-color: $blue;
+                height: 1px;
+           }
+        }
+       }
+       .input-zone1{
+        .mu-text-field-content {
+            display: block;
+            height: 100%;
+            padding-bottom: 1em;
+            padding-top: 0.5em;
+            padding-left: 4em;
+            .mu-text-field-focus-line{
+                background-color: $blue;
+                height: 1px;
+           }
+        }
+       }
+      .clause {
+        margin-top: 0.1em;
+        font-size: 0.8em;
+        span {
+          color: $lGray;
+        }
+        a {
+          color: $main;
+          text-decoration: none;
+        }
+      }
+      .a-down{
+        float: right;
+        margin-top: 0.5em;
+        display: inline-block;
+        color: $blue; 
+        text-decoration:underline;
+        text-align: right;
+    }
+     .p-tip{
+        margin-top:-0.7em; padding-top: 0em;color:#0A2463;font-size:0.8em;
+     }
+   }
+   .captcha-zone{
+       position: relative;
+       .div-send-code{
+        position: absolute;
+        bottom: 1.7em;
+        width: 8em;
+        height: 2em;
+        right: 0px;
+        background-size: cover;
+        background-repeat: no-repeat;
+         background:$blue; 
+         text-align: center; 
+         color: #fff; 
+         line-height:2em;
+         border-radius: 0.1em;
+       }
+   }
+   .captcha{
+        position: absolute;
+        bottom: 1.7em;
+        width: 8em;
+        height: 2em;
+        right: 0px;
+        background-size: cover;
+        background-repeat: no-repeat;
+   }
+   .captcha-btn{
+    width: 100%;
+    height: 2em;
+    color: #0095ff;
+    text-align: center;
+    line-height: 2em;
+    font-size: 1em;
+    background: #f7f7f7;
+    text-decoration:underline;
+    border: 0px;
+  }
+//   .captcha1{
+//     position: absolute;
+//     display: flex;
+//     bottom: 1.8em;
+//     width: 4em;
+//     height: 2em;
+//     left: 0px;
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     // background-color: rgba(0,0,0,0);
+//     }
+//     .captcha1_div_text{
+//         // margin-top: 0.5rem;
+        
+//     }
+
+    .captcha1{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 2px;
+        font-size: 16px;
+      }
+      .captcha1_div_text{
+          margin-top: 0.5rem;
+          
+      }
+
+
+
+    .img_down {
+        height: 0.5em;
+        width:0.98em; 
+        margin-left: 0.2rem;
+        margin-top: 1rem;
+        background: url("../assets/image/turnout_pop.png") no-repeat left;
+        background-size:auto 100%;
+      }
+      .mu-dropDown-menu-text-overflow {
+        white-space: nowrap;
+        // overflow: hidden;
+        width: 100%;
+        text-align: center;
+        
+        /deep/ .mu-text-field-content{
+            padding-top: 0px;
+            padding-bottom: 0px;
+            padding-left: -5px;
+            /deep/.mu-dropDown-menu{
+                font-size: 0.8em;
+            }
+            /deep/.mu-text-field-focus-line{
+                height: 0px;
+            }
+            /deep/.mu-text-field-line{
+                height: 0px;
+            }
+        }
+
+       
+        
+    }
+    
+    // /deep/ .mu-popover{
+    //     /deep/ .mu-menu{
+    //         width: 108px;
+    //         /deep/ .mu-menu-destop .mu-menu-item {
+    //             padding: 0 8px;
+    //         }
+    //     }
+    // }
+
+   .btn{
+    line-height: 2.5;
+    font-size: 1.12em;
+    height: auto;
+    margin-top: 3em;
+    background:$C0BE9AF; 
+    border-radius: 3em;
+    width: 90%;
+    margin: 1em auto 1em auto;
+    }
+    .mu-toast{
+      width:toRem(231);
+      height:auto;
+      background:rgba(0,0,0,1);
+      border-radius:10px;
+      opacity:0.6;
+      line-height: normal;
+      white-space: normal;
+      bottom: auto;
+      padding: 1em 2em;
+      color: #fff;
+      position: fixed;
+      left: 50%;
+      top: 50%;
+      transform: translate(toRem(-231 / 2), toRem(-123 / 2));
+      margin: 0 auto;
+      font-size: 1em;
+    }
+    .go_index{
+        width: 100%;
+        padding-top: 4em;
+        display: inline-block;
+        color: $blue; 
+        // text-decoration:underline;
+        text-decoration:none;
+        text-align: center;
+        bottom: 1em;
+        left: 0px;
+    }
+
+    .go_index1{
+        width: 100%;
+        padding-top: 5em;
+        display: inline-block;
+        color: $blue; 
+        // text-decoration:underline;
+        text-decoration:none;
+        text-align: center;
+        bottom: 1em;
+        left: 0px;
+    }
+    .go_index2{
+        width: 100%;
+        padding-top: 1em;
+        display: inline-block;
+        color: $blue; 
+        // text-decoration:underline;
+        text-decoration:none;
+        text-align: center;
+        bottom: 1em;
+        left: 0px;
+    }
+   
+}

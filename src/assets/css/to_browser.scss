@@ -1,0 +1,36 @@
+@import "../assets/css/config/Vars";
+body{
+    background: #323232;
+}
+.content-to-browser{
+    background: #323232;
+    height: 100em;
+    width: 100%;
+   .p{
+    position:relative;
+    width: 100%;
+    img{
+        position: absolute;
+        width:3em;
+        height:2.8em;
+       
+        right: 1.5em;
+        
+    }
+   }
+    
+    .p1{
+       
+        text-align: center;
+        color: white;
+    }
+    .p2{
+        text-align: center;
+        color: white;
+        margin-top: 0em;
+        span{
+            color: #ffd700;
+        }
+    }
+    
+}

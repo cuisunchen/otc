@@ -1,0 +1,21 @@
+@import "../assets/css/config/Vars";
+.terms-and-privacy {
+  .top {
+    height: toRem(44);
+    width: 100%;
+    background: $topBg;
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+    .left {
+      position: absolute;
+      top: toRem(10);
+      left: toRem(15);
+      // width: 1.35em;
+      width: toRem(24);
+      height: toRem(24);
+      background: url("../assets/image/arrow_left.png") no-repeat center;
+      background-size: cover;
+    }
+  }
+}

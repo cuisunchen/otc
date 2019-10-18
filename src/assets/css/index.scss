@@ -1,0 +1,361 @@
+@import "../assets/css/config/Vars";
+.index-content {
+  background: $white;
+  .top {
+    height: 3em;
+    width: 100%;
+    background: $topBg;
+    position: relative;
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+    max-width: 640px;
+    .left {
+      position: absolute;
+      top: 0.8em;
+      left: 1em;
+      width: 1.35em;
+      height: 1.35em;
+      background: url("../assets/image/arrow_left.png") no-repeat center;
+      background-size: cover;
+    }
+    .right {
+      position: absolute;
+      right: 2em;
+      top: 1em;
+      color: $white;
+      font-size: 1em;
+    }
+    .center {
+      position: absolute;
+      text-align: center;
+      width: 100%;
+      top: 1em;
+      color: $white;
+      font-size: 1em;
+      line-height: 1em;
+    }
+    // /deep/.icon-top{
+    //     position: absolute;
+    // }
+    .icon-top {
+      position: relative;
+      // background: #fff;
+      top: 2.2em;
+      left: 20px;
+      color: transparent;
+    }
+    .img-arrow {
+      position: absolute;
+      right: 1em;
+      top: 1.5em;
+      width: 0.7em;
+      height: 0.4em;
+      background: url("../assets/image/pull_down.png") no-repeat center;
+      background-size: cover;
+    }
+  }
+  .active {
+    .active1 {
+      position: relative;
+      .active1-ft-zone {
+        position: absolute;
+        top: 0px;
+        background: rgba(0, 0, 0, 0.35);
+        width: 100%;
+        height: 3em;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        p {
+          margin: 0 auto;
+          color: $white;
+          text-align: left;
+          padding: 0.4em 1em;
+          font-size: 0.8em;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+    img {
+      width: 100%;
+      display: block;
+    }
+    .active23-zone {
+      display: flex;
+      margin-top: 0.2em;
+      .active2 {
+        width: 50%;
+        margin-right: 0.1em;
+        position: relative;
+      }
+      .active3 {
+        width: 50%;
+        margin-left: 0.1em;
+        position: relative;
+      }
+    }
+  }
+  .btn-zone {
+    display: flex;
+    .trade-zone {
+      width: 33.3%;
+      text-align: center;
+      font-size: 0.85em;
+
+      .ico-trade {
+        display: inline-block;
+        width: 2em;
+        height: 2em;
+        // background: url("../assets/image/trade-ico.svg") no-repeat center;
+        // background-size: 100% 100%;
+        margin-top: 1em;
+      }
+      .ico-share {
+        display: inline-block;
+        width: 2.4em;
+        height: 2.4em;
+        // background: url("../assets/image/share-ico.svg") no-repeat center;
+        // background-size: 100% 100%;
+        margin-top: 0.6em;
+      }
+      .ico-bb {
+        display: inline-block;
+        width: 2em;
+        height: 2em;
+        // background: url("../assets/image/bb-ico.svg") no-repeat center;
+        background-size: 100% 100%;
+        margin-top: 1em;
+      }
+      p {
+        margin: 0 auto;
+        margin-top: 0.2em;
+      }
+    }
+  }
+
+  .trade-zone-trade {
+    display: flex;
+
+    // background-color: #22d737;
+    // background: url("../assets/image/trade-ico.svg") no-repeat center;
+    //    background-size: 100% 100%;
+    .ico-trade {
+      display: inline-block;
+      width: 2em;
+      height: 2em;
+      // background: url("../assets/image/trade-ico.svg") no-repeat center;
+      background-size: 100% 100%;
+      margin-top: 1.8em;
+      margin-left: 1em;
+      margin-right: 0.5em;
+    }
+    .trade-zone-index-div {
+      flex: 1;
+      h3 {
+        text-align: left;
+        margin-bottom: 0.3em;
+      }
+      p {
+        text-align: left;
+        margin-top: 0px;
+        padding-top: 0px;
+      }
+    }
+    .ico-go {
+      display: inline-block;
+      width: 2em;
+      height: 2em;
+      // background: url(../assets/image/go_right.svg);
+      background-size: 100% 100%;
+      margin-top: 1.8em;
+      margin-right: 1em;
+    }
+  }
+  .trade-zone-bb {
+    display: flex;
+    background-color: #3d9cee;
+    .ico-bb {
+      display: inline-block;
+      width: 2em;
+      height: 2em;
+      // background: url("../assets/image/bb-ico.svg") no-repeat center;
+      background-size: 100% 100%;
+      margin-top: 1.8em;
+      margin-left: 1em;
+      margin-right: 0.5em;
+    }
+    .trade-zone-index-div {
+      flex: 1;
+      h3 {
+        text-align: left;
+        margin-bottom: 0.3em;
+      }
+      p {
+        text-align: left;
+        margin-top: 0px;
+        padding-top: 0px;
+      }
+    }
+    .ico-go {
+      display: inline-block;
+      width: 2em;
+      height: 2em;
+      // background: url(../assets/image/go_right.svg);
+      background-size: 100% 100%;
+      margin-top: 1.8em;
+      margin-right: 1em;
+    }
+  }
+  .trade-zone-share {
+    display: flex;
+    background-color: aqua;
+    .ico-share {
+      display: inline-block;
+      width: 2em;
+      height: 2em;
+      // background: url("../assets/image/share-ico.svg") no-repeat center;
+      background-size: 100% 100%;
+      margin-top: 1.8em;
+      margin-left: 1em;
+      margin-right: 0.5em;
+    }
+    .trade-zone-index-div {
+      flex: 1;
+      h3 {
+        text-align: left;
+        margin-bottom: 0.3em;
+      }
+      p {
+        text-align: left;
+        margin-top: 0px;
+        padding-top: 0px;
+      }
+    }
+    .ico-go {
+      display: inline-block;
+      width: 2em;
+      height: 2em;
+      // background: url(../assets/image/go_right.svg);
+      background-size: 100% 100%;
+      margin-top: 1.8em;
+      margin-right: 1em;
+    }
+  }
+  .trade-zone-wallet {
+    display: flex;
+    background-color: #ff4551;
+    .ico-wallet {
+      display: inline-block;
+      width: 2em;
+      height: 2em;
+      // background: url("../assets/image/bb-ico.svg") no-repeat center;
+      background-size: 100% 100%;
+      margin-top: 1.8em;
+      margin-left: 1em;
+      margin-right: 0.5em;
+    }
+    .trade-zone-index-div {
+      flex: 1;
+      h3 {
+        text-align: left;
+        margin-bottom: 0.3em;
+      }
+      p {
+        text-align: left;
+        margin-top: 0px;
+        padding-top: 0px;
+      }
+    }
+    .ico-go {
+      display: inline-block;
+      width: 2em;
+      height: 2em;
+      // background: url(../assets/image/go_right.svg);
+      background-size: 100% 100%;
+      margin-top: 1.8em;
+      margin-right: 1em;
+    }
+  }
+  .index-div-bg {
+    margin: 1em 1em;
+    border-radius: 0.3em;
+  }
+  .trade-zone-game {
+    display: flex;
+    background-color: aquamarine;
+    .ico-game {
+      display: inline-block;
+      width: 2em;
+      height: 2em;
+      // background: url("../assets/image/share-ico.svg") no-repeat center;
+      background-size: 100% 100%;
+      margin-top: 1.8em;
+      margin-left: 1em;
+      margin-right: 0.5em;
+    }
+    .trade-zone-index-div {
+      flex: 1;
+      h3 {
+        text-align: left;
+        margin-bottom: 0.3em;
+      }
+      p {
+        text-align: left;
+        margin-top: 0px;
+        padding-top: 0px;
+      }
+    }
+    .ico-go {
+      display: inline-block;
+      width: 2em;
+      height: 2em;
+      // background: url(../assets/image/go_right.svg);
+      background-size: 100% 100%;
+      margin-top: 1.8em;
+      margin-right: 1em;
+    }
+  }
+  table {
+    margin-top: 1em;
+    width: 100%;
+    overflow: hidden;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: #f5f5f5;
+    thead {
+      background: #3d9cee;
+    }
+    th {
+      font-size: 0.75em;
+      padding: 0.8em 1.2em;
+      padding-left: 1em;
+      text-align: center;
+      color: $white;
+      font-weight: 400;
+    }
+    td {
+      font-size: 0.75em;
+      padding: 0.8em 1.2em;
+      text-align: center;
+      color: #999;
+      font-weight: 400;
+
+      a {
+        color: $blue;
+      }
+    }
+    .x {
+      color: #ff4551;
+    }
+    .df {
+      color: #22d737;
+    }
+    tr:nth-of-type(odd) {
+      background-color: #fff;
+    }
+  }
+}

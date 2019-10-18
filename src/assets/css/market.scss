@@ -1,0 +1,1259 @@
+@import "../assets/css/config/Vars";
+.mu-appbar{
+    background-color: $blue;
+    height: 3em;
+}
+.mu-tabs{
+    background-color: #fff;
+    height: 2em;
+    color:#333;
+}
+.mu-ripple-wrapper{
+    // height: 2em;
+}
+.mu-tab-text{
+    color:#333;
+}
+.mu-tab-link-highlight{
+    background-color:$blue;
+}
+
+.fix-progress{
+    position: fixed;
+    top:0px;
+    width: 100%;
+    max-width: 640px;
+    z-index: 99999;
+}
+.market-content{
+    padding-top: 4em;
+}
+.paixu{
+    margin-right: 1em;
+    overflow: visible;
+   button{
+        overflow: visible;
+        width: 4.2em;
+    }
+}  
+.fixed-top{
+    position: fixed;
+    top:0px;
+    width: 100%;
+    max-width: 640px;
+    z-index: 999;
+    .top_sort_zone{
+        position: absolute;
+        right: 0.7em;
+        top:0.8em;
+        font-size: 0.85em;
+        span{
+            margin-left: 0.5em;
+        }
+        .active{
+            color:$pwhite;
+        }
+    }
+    .appbar-search-field{ 
+        width: 13em;
+        font-size: 1em;
+        margin-right: 1em;
+        color: #FFF;
+        margin-bottom: 0;
+        &.focus-state {
+          color: #FFF;
+        }
+        .mu-text-field-icon{
+            color: rgba(0,0,0,.38)
+        }
+        .mu-text-field-hint {
+          color: fade(#FFF, 54%);
+          right: 0em;
+          text-align: right;
+        }
+        .mu-text-field-input {
+          color: #FFF;
+        }
+        .mu-text-field-focus-line {
+          background-color: rgba(255,255,255,.6);
+        }
+      }
+}
+.content{
+    padding-bottom:3.2em;
+    position: relative;
+   
+    .list-content-zone{
+        width: 100%;
+        padding: 1em;
+    }
+    .list-row3{
+        width: 33.333333%;
+        float: left;
+        text-align: center;
+        margin-bottom:0.8em;
+        img{
+            position: absolute;
+            top:0px;
+            left: 0px;
+            width: 100%;
+        }
+        .content-zone{
+            width: 7.2em;
+            background: $white;
+            box-shadow: 0px 0px 3px rgba(0,0,0,.1);
+            border: 1px solid $white;
+            border-radius: 0.15em;
+            overflow: hidden;
+            position: relative;
+            margin: 0 auto;
+            .content-zone-img{
+                min-height: 7.2em;
+                position: relative;
+                .body1{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"body1.png");
+                    background-position: 0px 0px;
+                    background-size: auto 100%;
+                }
+                .body2{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"body1.png");
+                    background-position:-6em 0px;
+                    background-size: auto 100%;
+                }
+                .body3{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"body1.png");
+                    background-position:-12em 0px;
+                    background-size: auto 100%;
+                }
+                .body4{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"body1.png");
+                    background-position:-18em 0px;
+                    background-size: auto 100%;
+                }
+                .body5{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"body1.png");
+                    background-position:-24em 0px;
+                    background-size: auto 100%;
+                }
+                .body6{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"body1.png");
+                    background-position:-30em 0px;
+                    background-size: auto 100%;
+                }
+                .body7{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"body1.png");
+                    background-position:-36em 0px;
+                    background-size: auto 100%;
+                }
+                .body8{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"body1.png");
+                    background-position:-42em 0px;
+                    background-size: auto 100%;
+                }
+                .body9{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"body1.png");
+                    background-position:-48em 0px;
+                    background-size: auto 100%;
+                }
+                .body10{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"body1.png");
+                    background-position:-54em 0px;
+                    background-size: auto 100%;
+                }
+                .body11{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"body1.png");
+                    background-position:-60em 0px;
+                    background-size: auto 100%;
+                }
+                .body12{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"body1.png");
+                    background-position:-66em 0px;
+                    background-size: auto 100%;
+                }
+                .body13{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"body1.png");
+                    background-position:-72em 0px;
+                    background-size: auto 100%;
+                }
+                .body14{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"body1.png");
+                    background-position:-78em 0px;
+                    background-size: auto 100%;
+                }
+                .body15{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"body1.png");
+                    background-position:-84em 0px;
+                    background-size: auto 100%;
+                }
+                .body16{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"body1.png");
+                    background-position:-90em 0px;
+                    background-size: auto 100%;
+                }
+                .body17{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"body1.png");
+                    background-position:-96em 0px;
+                    background-size: auto 100%;
+                }
+                .body18{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"body1.png");
+                    background-position:-102em 0px;
+                    background-size: auto 100%;
+                }
+                .hate1{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"hate.png");
+                    background-position: 0px 0px;
+                    background-size: auto 100%;
+                }
+                .hate2{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"hate.png");
+                    background-position:-6em 0px;
+                    background-size: auto 100%;
+                }
+                .hate3{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"hate.png");
+                    background-position:-12em 0px;
+                    background-size: auto 100%;
+                }
+                .hate4{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"hate.png");
+                    background-position:-18em 0px;
+                    background-size: auto 100%;
+                }
+                .hate5{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"hate.png");
+                    background-position:-24em 0px;
+                    background-size: auto 100%;
+                }
+                .hate6{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"hate.png");
+                    background-position:-30em 0px;
+                    background-size: auto 100%;
+                }
+                .hate7{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"hate.png");
+                    background-position:-36em 0px;
+                    background-size: auto 100%;
+                }
+                .hate8{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"hate.png");
+                    background-position:-42em 0px;
+                    background-size: auto 100%;
+                }
+                .hate9{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"hate.png");
+                    background-position:-48em 0px;
+                    background-size: auto 100%;
+                }
+                .erhuan1{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"erhuan.png");
+                    background-position: 0px 0px;
+                    background-size: auto 100%;
+                }
+                .erhuan2{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"erhuan.png");
+                    background-position:-6em 0px;
+                    background-size: auto 100%;
+                }
+                .erhuan3{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"erhuan.png");
+                    background-position:-12em 0px;
+                    background-size: auto 100%;
+                }
+                .erhuan4{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"erhuan.png");
+                    background-position:-18em 0px;
+                    background-size: auto 100%;
+                }
+                .erhuan5{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"erhuan.png");
+                    background-position:-24em 0px;
+                    background-size: auto 100%;
+                }
+                .erhuan6{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"erhuan.png");
+                    background-position:-30em 0px;
+                    background-size: auto 100%;
+                }
+                .erhuan7{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"erhuan.png");
+                    background-position:-36em 0px;
+                    background-size: auto 100%;
+                }
+                .erhuan8{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"erhuan.png");
+                    background-position:-42em 0px;
+                    background-size: auto 100%;
+                }
+                .erhuan9{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"erhuan.png");
+                    background-position:-48em 0px;
+                    background-size: auto 100%;
+                }
+                .yanjing1{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"yanjing.png");
+                    background-position: 0px 0px;
+                    background-size: auto 100%;
+                }
+                .yanjing2{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"yanjing.png");
+                    background-position:-6em 0px;
+                    background-size: auto 100%;
+                }
+                .yanjing3{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"yanjing.png");
+                    background-position:-12em 0px;
+                    background-size: auto 100%;
+                }
+                .yanjing4{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"yanjing.png");
+                    background-position:-18em 0px;
+                    background-size: auto 100%;
+                }
+                .yanjing5{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"yanjing.png");
+                    background-position:-24em 0px;
+                    background-size: auto 100%;
+                }
+                .yanjing6{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"yanjing.png");
+                    background-position:-30em 0px;
+                    background-size: auto 100%;
+                }
+                .yanjing7{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"yanjing.png");
+                    background-position:-36em 0px;
+                    background-size: auto 100%;
+                }
+                .yanjing8{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"yanjing.png");
+                    background-position:-42em 0px;
+                    background-size: auto 100%;
+                }
+                .yanjing9{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"yanjing.png");
+                    background-position:-48em 0px;
+                    background-size: auto 100%;
+                }
+                .weibo1{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"weibo.png");
+                    background-position: 0px 0px;
+                    background-size: auto 100%;
+                }
+                .weibo2{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"weibo.png");
+                    background-position:-6em 0px;
+                    background-size: auto 100%;
+                }
+                .weibo3{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"weibo.png");
+                    background-position:-12em 0px;
+                    background-size: auto 100%;
+                }
+                .weibo4{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"weibo.png");
+                    background-position:-18em 0px;
+                    background-size: auto 100%;
+                }
+                .weibo5{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"weibo.png");
+                    background-position:-24em 0px;
+                    background-size: auto 100%;
+                }
+                .weibo6{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"weibo.png");
+                    background-position:-30em 0px;
+                    background-size: auto 100%;
+                }
+                .weibo7{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"weibo.png");
+                    background-position:-36em 0px;
+                    background-size: auto 100%;
+                }
+                .weibo8{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"weibo.png");
+                    background-position:-42em 0px;
+                    background-size: auto 100%;
+                }
+                .weibo9{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"weibo.png");
+                    background-position:-48em 0px;
+                    background-size: auto 100%;
+                }
+                .shiping1{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"shiping.png");
+                    background-position: 0px 0px;
+                    background-size: auto 100%;
+                }
+                .shiping2{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"shiping.png");
+                    background-position:-6em 0px;
+                    background-size: auto 100%;
+                }
+                .shiping3{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"shiping.png");
+                    background-position:-12em 0px;
+                    background-size: auto 100%;
+                }
+                .shiping4{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"shiping.png");
+                    background-position:-18em 0px;
+                    background-size: auto 100%;
+                }
+                .shiping5{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"shiping.png");
+                    background-position:-24em 0px;
+                    background-size: auto 100%;
+                }
+                .shiping6{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"shiping.png");
+                    background-position:-30em 0px;
+                    background-size: auto 100%;
+                }
+                .shiping7{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"shiping.png");
+                    background-position:-36em 0px;
+                    background-size: auto 100%;
+                }
+                .shiping8{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"shiping.png");
+                    background-position:-42em 0px;
+                    background-size: auto 100%;
+                }
+                .shiping9{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"shiping.png");
+                    background-position:-48em 0px;
+                    background-size: auto 100%;
+                }
+                .mouth1{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"mouth.png");
+                    background-position: 0px 0px;
+                    background-size: auto 100%;
+                }
+                .mouth2{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"mouth.png");
+                    background-position:-6em 0px;
+                    background-size: auto 100%;
+                }
+                .mouth3{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"mouth.png");
+                    background-position:-12em 0px;
+                    background-size: auto 100%;
+                }
+                .mouth4{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"mouth.png");
+                    background-position:-18em 0px;
+                    background-size: auto 100%;
+                }
+                .mouth5{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"mouth.png");
+                    background-position:-24em 0px;
+                    background-size: auto 100%;
+                }
+                .mouth6{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"mouth.png");
+                    background-position:-30em 0px;
+                    background-size: auto 100%;
+                }
+                .mouth7{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"mouth.png");
+                    background-position:-36em 0px;
+                    background-size: auto 100%;
+                }
+                .mouth8{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"mouth.png");
+                    background-position:-42em 0px;
+                    background-size: auto 100%;
+                }
+                .mouth9{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"mouth.png");
+                    background-position:-48em 0px;
+                    background-size: auto 100%;
+                }
+                .face1{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"face.png");
+                    background-position: 0px 0px;
+                    background-size: auto 100%;
+                }
+                .face2{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"face.png");
+                    background-position:-6em 0px;
+                    background-size: auto 100%;
+                }
+                .face3{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"face.png");
+                    background-position:-12em 0px;
+                    background-size: auto 100%;
+                }
+                .face4{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"face.png");
+                    background-position:-18em 0px;
+                    background-size: auto 100%;
+                }
+                .face5{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"face.png");
+                    background-position:-24em 0px;
+                    background-size: auto 100%;
+                }
+                .face6{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"face.png");
+                    background-position:-30em 0px;
+                    background-size: auto 100%;
+                }
+                .face7{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"face.png");
+                    background-position:-36em 0px;
+                    background-size: auto 100%;
+                }
+                .face8{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"face.png");
+                    background-position:-42em 0px;
+                    background-size: auto 100%;
+                }
+                .face9{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"face.png");
+                    background-position:-48em 0px;
+                    background-size: auto 100%;
+                }
+                .level1{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"level.png");
+                    background-position: -24em 0px;
+                    background-size: auto 100%;
+                }
+                .level2{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"level.png");
+                    background-position:-18em 0px;
+                    background-size: auto 100%;
+                }
+                .level3{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"level.png");
+                    background-position:-12em 0px;
+                    background-size: auto 100%;
+                }
+                .level4{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"level.png");
+                    background-position:-6em 0px;
+                    background-size: auto 100%;
+                }
+                .level5{
+                    position: absolute;
+                    width: 6em;
+                    height: 6em;
+                    left: 0.8em;
+                    top: 0.2em;
+                    background: url($IMAGE_BASE_URL+"level.png");
+                    background-position:0em 0px;
+                    background-size: auto 100%;
+                }
+            }
+            .content-zone-body{
+                position: absolute;
+                top:0px;
+                left: 0px;
+                height: 100%;
+                width: 100%;
+            }
+            .content-title{
+                background: $white;
+                line-height: 2;
+                color: $blue;
+                position: relative;
+                text-align: left;
+                padding-left: 0.5em;
+                font-weight: 600;
+                font-size:0.6em;
+                .fox-msg{
+                    position: absolute;
+                    top:-2.2em;
+                    overflow: hidden;
+                    padding: 0px 0.3em;
+                    color: $bannerft;
+                    left: 0px;
+                    width: 100%;
+                    line-height: 1;
+                    font-size: 0.8em;
+                    font-weight: 300;
+                    text-overflow:ellipsis
+                }
+                span{
+                    float: right;
+                    padding-right: 0.5em;
+                    text-align: right;
+                    color: $bannerft;
+                    font-weight: 300;
+                }
+            }
+            .g{
+                position: absolute;
+                right: 0.5em;
+                bottom: 1.8em;
+                font-size: 0.8em;
+                color:$blue;
+                .g1{
+                    color: $blue;
+                    font-size: 1.6em;
+                    position: relative;
+                    top:0.05em;
+                }
+            }
+            .fox-id{
+                position: absolute;
+                left: 0em;
+                top: 0em;
+                background: rgba(61, 156, 238, 0.65);
+                padding-left: 0.4em;
+                border-bottom-right-radius: 1em;
+                border-top-right-radius: 1em;
+                padding-right: 0.8em;
+                font-size: 0.8em;
+                color:rgba(255,255,255,.8);
+            }
+        }
+    }
+    
+    .mu-toast{
+        width:toRem(231);
+        height:auto;
+        background:rgba(0,0,0,1);
+        border-radius:10px;
+        opacity:0.6;
+        line-height: normal;
+        white-space: normal;
+        bottom: auto;
+        padding: 1em 2em;
+        color: #fff;
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(toRem(-231 / 2), toRem(-123 / 2));
+        margin: 0 auto;
+        font-size: 1em;
+      }
+
+}
+.mijing-zone{
+    padding: 1em 1.2em;
+    background: $white; 
+    .all-price{
+        float:right;
+        margin-right:10;
+    }
+    .mijing-tilte{
+        display: table;
+        width: 100%;
+    }
+    .mijing-table-zone{
+        display: flex;
+        .table-zoneleft{
+            width: 50%;
+            flex: 1;
+            padding-right:0.5em;
+            .mijin-table{
+                width: 100%;
+                text-align: right;
+                font-size: 0.8em;
+                line-height: 1.3;
+                height: 8em;
+                .td-gray{
+                    color:#999;
+                }
+                .td-red{
+                    color:#ff4551;
+                }
+            }
+            .ft-left{
+                text-align: left;
+            }
+        }
+        .table-zoneright{
+            width: 50%;
+            flex: 1;
+            padding-left: 0.5em;
+            .mijin-table{
+                width: 100%;
+                text-align: right;
+                font-size: 0.8em;
+                line-height: 1.3;
+                height: 8em;
+                .td-gray{
+                    color:#999;
+                }
+                .td-green{
+                    color:#00CC66;
+                }
+            }
+        }
+    }
+    .buy-sell-btn-zone{
+        display: flex;
+        padding-top: 0.6em;
+        .buy-change-btn{
+            width: 50%;
+            flex: 1;
+            background-color: #00CC66;
+            border: 0px;
+            border-bottom-left-radius: 0.2em;
+            border-top-left-radius: 0.2em;
+            color:#fff;
+            line-height: 1.8;
+            &.disable {
+                border-style:solid;
+                border-width:1px;
+                border-color:#00CC66;
+                color:#00CC66;
+                background-color: #ffffff;
+                cursor: auto;
+                &:hover {
+                  background-color:  #ffffff;
+                }
+              }
+              &:hover {
+                background-color:  #00CC66;
+              }
+        }
+        .sell-change-btn{
+            width: 50%;
+            flex: 1;
+            background: #ff4551;
+            border: 0px;
+            border-bottom-right-radius: 0.2em;
+            border-top-right-radius: 0.2em;
+            color:#fff;
+            line-height: 1.8;
+            &.disable {
+                border-style:solid;
+                border-width:1px;
+                border-color:#ff4551;
+                color:#ff4551;
+                background-color: #ffffff;
+                cursor: auto;
+                &:hover {
+                  background-color:  #ffffff;
+                }
+              }
+              &:hover {
+                background-color:  #ff4551;
+              }
+        }
+    }
+    .choise-input-zone{
+        display: flex;
+        margin-top: 0.6em;
+        .add-btn{
+            display: inline-block;
+            width: 2.5em;
+            height: 2.2em;
+            border:1px solid #00CC66;
+            border-bottom-right-radius: 0.2em;
+            border-top-right-radius: 0.2em;
+            color: #00CC66;
+        }
+        .remove-btn{
+            display: inline-block;
+            width: 2.5em;
+            height: 2.2em;
+            border:1px solid #00CC66;
+            border-bottom-left-radius: 0.2em;
+            border-top-left-radius: 0.2em;
+            color: #00CC66;
+        }
+        .red_btn{
+            color: #ff4551;
+            border-color: #ff4551;
+        }
+        .add-control{
+            border:1px solid #00CC66;
+            border-left: 0px;
+            border-right: 0px;
+            flex: 1;
+            text-align: center
+        }
+        .border_red{
+            border-color: #ff4551;
+        }
+    }
+    .buy-big-btn{
+        background-color: #00CC66;
+        color:#fff;
+        line-height: 2.4;
+        width: 100%;
+        border: 0px;
+        border-radius: 0.2em;
+        margin-top: 1.2em;
+        &.disable {
+            background-color: #bfbfbf;
+            cursor: auto;
+  
+            &:hover {
+              background-color:  #bfbfbf;
+            }
+          }
+  
+          &:hover {
+            background-color:  #00CC66;
+          }
+    }
+    .sell-big-btn{
+        background: #ff4551;
+        color:#fff;
+        line-height: 2.4;
+        width: 100%;
+        border: 0px;
+        border-radius: 0.2em;
+        margin-top: 1.2em;
+    }
+    .table-history{
+        width: 100%;
+        font-size: 0.8em;
+        color:#999;
+        .history-table{
+            width: 100%;
+            background: #ede7f6;
+        }
+        .td-time{
+            width: 7em;
+        }
+    }
+    .history_btn_zone{
+        text-align: left;
+        margin-top: 1em;
+        margin-bottom:0px;
+        button{
+            background: transparent;
+            border: 0px;
+            // border-bottom:1px solid $main;
+            color: #999;
+            font-size: 1.2em;
+            padding: 0.2em 0.8em;
+        }
+        button.active{
+             border-bottom:1px solid $main;
+             color: $main;
+        }
+    }
+}

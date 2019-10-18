@@ -1,0 +1,193 @@
+@import "../assets/css/config/Vars";
+
+
+.content{ 
+    // background: transparent;
+    background:rgba(243,245,247,1);
+    position: relative;
+    height: 100%;
+    .top{
+      height: toRem(44);
+      line-height: toRem(44);
+      width: 100%;
+      background:#fff;
+      top: 0em;
+      left: 0em;
+      z-index: 999;
+      .center{
+          position: absolute;
+          width: 100%;
+          text-align: center;
+          height:toRem(44);
+          font-family:PingFangSC;
+          font-weight:500;
+          color:rgba(36,41,50,1);
+          line-height:toRem(44);
+      }
+      .left {
+          position: absolute;
+          left: 1em; 
+          width:1.35em;
+          height: 1.35em;
+          top:0.8em;
+          background: url("../assets/image/arrow_left.png") no-repeat center;
+          background-size: cover;
+        }
+  }
+
+    .login{
+        width: 100%;
+        padding: 0em  1.07rem;
+        text-align: left;
+        background:#fff;
+        padding-bottom: toRem(20);
+        .input-zone{
+         .mu-text-field-content {
+             display: block;
+             height: 100%;
+             padding-bottom: 1em;
+             padding-top: 0.5em;
+         }
+         /deep/ {
+          .mu-text-field-hint{
+             height:toRem(50);
+             line-height:toRem(50);
+          }
+          .mu-text-field-content{
+            height:toRem(50);
+             line-height:toRem(50);
+          }
+          .mu-text-field-input{
+            height:toRem(50);
+            line-height:toRem(50);
+            font-size:14px;
+          }
+        } 
+      }
+       .clause {
+         margin-top: 0.1em;
+         font-size: 0.8em;
+         span {
+           color: $lGray;
+         }
+         a {
+           color: $main;
+           text-decoration: none;
+         }
+       }
+        
+    }
+    .captcha-zone{
+        position: relative;
+        .div-send-code{
+         position: absolute;
+         bottom: 1.4em;
+         width: 7.5em;
+         height: 2em;
+         right: 0px;
+         background-size: cover;
+         background-repeat: no-repeat;
+          background:#1e6aaa; 
+          text-align: center; 
+          color: #fff; 
+          line-height:2em;
+        }
+    }
+    .captcha{
+         position: absolute;
+         bottom: 1.4em;
+         width: 7.5em;
+         height: 2em;
+         right: 0px;
+         background-size: cover;
+         background-repeat: no-repeat;
+    }
+    .btn{
+        line-height: 2.5;
+        margin-top: 3em;
+        border-radius: 3em;
+        margin: 2.4rem auto 2.4rem auto;
+        width:toRem(345);
+        height:toRem(50);
+        background:rgba(255,255,255,1);
+        border-radius:toRem(4);
+        // margin-left: 2%;
+        width:345px;
+        color:#005EE4;
+        border:1px solid rgba(0,94,228,1);
+        }
+     .mu-toast{
+      color: #fff;
+      white-space: nowrap;
+      -o-text-overflow: ellipsis;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      word-wrap: break-word;
+      max-width: 100%;
+      width: 100%;
+      position: fixed;
+      width:toRem(170);
+      height:toRem(56);
+      background:rgba(0,0,0,1);
+      border-radius:toRem(6);
+      opacity:0.6;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin:auto;
+      padding:0;
+      font-size: 1rem;
+      line-height: toRem(56);
+     }
+}
+
+.reset-dialog-wrap {
+  width: toRem(327);
+  // height: toRem(220) ;
+  padding: 1.47rem 1rem 1rem 1rem;
+}
+.reset-dialog{
+  .dialog-title{
+    height:toRem(18);
+    font-family:PingFangSC;
+    font-weight:500;
+    color:rgba(78,88,110,1);
+    line-height:toRem(18);
+  }
+  .dialog-text{
+    font-size:15px;
+    font-family:PingFangSC;
+    font-weight:400;
+    color:rgba(78,88,110,1);
+    line-height:toRem(21);
+  }
+  .btn{
+    width:100%;
+    .btn-toast-submit{
+      width: toRem(193);
+      height: toRem(50);
+      background:rgba(0,94,228,1);
+      border-radius:4px; 
+    }
+    .btn-toast-cancel{
+      width: toRem(95);
+      height: toRem(50);
+      background:rgba(255,255,255,1);
+      border-radius:4px;
+      border:1px solid rgba(0,94,228,1);
+      color:rgba(0,94,228,1);
+    }
+  }
+} 
+.reset-dialog:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background:rgba(0,0,0,1);
+  opacity:0.49;
+  top: 0px;
+  left: 0;
+  z-index:-999;
+}

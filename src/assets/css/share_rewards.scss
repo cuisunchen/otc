@@ -1,0 +1,128 @@
+@import "../assets/css/config/Vars";
+// body{
+//     margin-bottom: 3em;
+//     max-width: 640px;
+// }
+
+.content{ 
+    background: transparent;
+    position: relative;
+    padding-bottom:3.2em;
+    height: 100%;
+    width: 100%;
+    background: #F3F5F7;
+    .top{
+        height: 3em;
+        width: 100%;
+        background:  #006FE9;
+        position: relative;
+        position: fixed;
+        top:0px;
+        z-index: 999;
+        // box-shadow: 0px 1px 2px rgba(0,0,0,.1);
+        max-width: 640px;
+        .center{
+            position: absolute;
+            width: 100%;
+            color: $white;
+            font-size: 16px;
+            text-align: center;
+            line-height: 44px;
+            height: 44px;
+        }
+    
+        .left {
+            position: absolute;
+            top:0.8em;
+            left: 1em; 
+            width: 1.35em;
+            height: 1.35em;
+            background: url("../assets/image/arrow_left_white.png") no-repeat center;
+            background-size: cover;
+          }
+    }
+    .share-div{
+        background: #006FE9;
+        display: flex;
+        height: 7em;
+        width: 100%;
+        .share-div-left{
+            flex: 1;
+            .p1{
+                text-align: center;
+                color: #ffffff;
+                font-size: 1.2em;
+                margin-top: 1.5em;
+            }
+            .p2{
+                text-align: center;
+                color: #ffffff;
+                font-size: 0.8em;
+            }
+        }
+        .share-div-line{
+            margin-top: 1.5em;
+            width: 1px;
+            height: 3.6em;
+            background: rgba(255,255,255,0.5);
+        }
+        .share-div-right{
+            flex: 1;
+            .p1{
+                text-align: center;
+                color: #ffffff;
+                font-size: 1.2em;
+                margin-top: 1.5em;
+            }
+            .p2{
+                text-align: center;
+                color: #ffffff;
+                font-size: 0.8em;
+            }
+        }
+    }
+    .div-share-empty{
+        width: 100%;
+        height: 0.6em;
+        background: #F3F5F7; 
+    }
+    .reward-table{
+        width: 100%;
+        border:0;
+        border-collapse:collapse;
+        font-size: 0.85em;
+        background: #ffffff;
+        .reward-table-head{
+            background: #ffffff !important;
+            line-height: 2.3em;
+            color: #4E586E;
+            
+        }
+//         .reward-table tbody tr:nth-child(even) td,
+
+// .reward-table tbody tr:nth-child(even) th {background-color:#D4FFFF;}
+
+
+
+// .reward-table tbody tr:nth-child(odd) td,
+
+       tr:nth-child(odd){
+           background-color:#fff
+        }
+        .reward-table-item{
+            color: $C808080;
+            font-size: 0.85em;
+            line-height: 2.4em;
+           
+            .reward-table-item-left{
+                text-align: left;
+                padding-left: 1.5em;
+            }
+            .reward-table-item-right{
+                text-align: right;
+                padding-right: 1.5em;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,250 @@
+@import "../assets/css/config/Vars";
+
+.content-reset-pwd{
+    position: relative;
+    background:$bg;
+    height: 100%;
+    width: 100%;
+    // padding-bottom: 20em;
+    .ios-top{
+        width: 100%;
+        height: 0em;
+        background: $topBg; 
+
+    }
+    .top {
+        height: 3em;
+        width: 100%;
+        background: $topBg;
+        position: fixed;
+        top: 0px;
+        z-index: 999;
+        // box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+        max-width: 640px;
+        .right {
+          position: absolute;
+          right: 1em;
+          top: 0em;
+          color: #ffffff;
+          font-size: 1em;
+          line-height: 3em;
+          height: 3em;
+          padding-right: 1em;
+        }
+    
+        .left {
+            position: absolute;
+            top:0.8em;
+            left: 1em; 
+            // width: 1.35em;
+            width: 1.35em;
+            height: 1.35em;
+            background: url("../assets/image/arrow_left.png") no-repeat center;
+            background-size: cover;
+          }
+
+        .icon-top {
+          position: relative;
+          // background: #fff;
+          top: 2.4em;
+          left: 20px;
+          color: transparent;
+        }
+        .img-arrow {
+          position: absolute;
+          right: 1em;
+          top: 1.25em;
+          width: 0.7em;
+          height: 0.4em;
+          background: url("../assets/image/pull_down.png") no-repeat center;
+          background-size: cover;
+        }
+      }
+    // .top{
+    //     width: 100%; 
+    //     height: 3em;
+    //     background: $topBg; 
+    //     .center{
+    //         position: absolute;
+    //         width: 100%;
+    //         top: 1em;
+    //         color: $white;
+    //         font-size: 1em;
+    //         text-align: center;
+    //         line-height: 1;
+    //     }
+    //     .right{
+    //         position: absolute;
+    //         right: 1em;
+    //         top: 1em;
+    //         color: $C4A4A4A;
+    //         font-size: 1em;
+    //         line-height: 1;
+    //     }
+    //     .left {
+    //         position: absolute;
+    //         top:0.8em;
+    //         left: 1em; 
+    //         width: 1.35em;
+    //         height: 1.35em;
+    //         background: url("../assets/image/arrow_left.png") no-repeat center;
+    //         background-size: cover;
+    //       }
+    // }
+    .banner {
+        width: 100%;
+        height: 4em;
+        display: flex;
+        margin-top:5em;
+        padding-left: 2.5em;
+        .logo {
+          height: 2.8em;
+          width:13em; 
+          background: url($IMAGE_BASE_URL+"large_logo.png") no-repeat left;
+          background-size:auto 100%;
+        }
+      }
+   .login{
+       width: 90%;
+       padding:1em  1em 1em 1em;
+       margin-left: 5%;
+       background: #ffffff;
+       text-align: left;
+       margin-top: 1.5em;
+       .input-zone{
+        margin-top: 10px;
+        .mu-text-field {
+          margin-bottom: 0;
+        }
+        .mu-text-field-content {
+            display: block;
+            height: 100%;
+            padding-bottom: 0;
+            padding-top: 0;
+            .mu-text-field-focus-line{
+                background-color: $blue;
+                height: 1px;
+           }
+
+           .mu-text-field-hint {
+             line-height: 48px;
+           }
+           .mu-text-field-input {
+            text-indent: 4px;
+            height: 48px;
+          }
+        }
+       };
+      
+
+       .input-zone1{
+        display: block;
+        .mu-text-field {
+          margin-bottom: 0;
+          display: block;
+        }
+
+        .mu-text-field-content {
+            display: block;
+            height: 100%;
+            padding-bottom: 0;
+            padding-top: 0;
+            .mu-text-field-focus-line{
+                background-color: $blue;
+                height: 1px;
+           }
+           .mu-text-field-hint {
+            text-indent: 48px;
+            height: 48px;
+            line-height: 48px;
+           }
+           .mu-text-field-input {
+             text-indent: 48px;
+             height: 48px;
+           }
+        }
+       }
+       
+   }
+   .pw-forget-btn{
+    margin-top:  8px;
+    text-align: left;
+    font-size: 0.85em;
+    color: $blue;
+    }
+   .captcha-zone{
+       position: relative;
+   }
+   .captcha{
+        position: absolute;
+        top: 50%;
+        margin-top: -24px;
+        width: 120px;
+        height: 40px;
+        right: 6px;
+        background-size: cover;
+        background-repeat: no-repeat;
+   }
+   .captcha1{
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 2px;
+      font-size: 16px;
+    }
+    .captcha1_div_text{
+        margin-top: 0.5rem;
+        
+    }
+    .img_down {
+        height: 0.5em;
+        width:0.98em; 
+        margin-left: 0.2rem;
+        margin-top: 1rem;
+        background: url("../assets/image/turnout_pop.png") no-repeat left;
+        background-size:auto 100%;
+      }
+   .captcha-btn{
+    width: 100%;
+    height: 48px;
+    color: #0095ff;
+    text-align: center;
+    line-height: 2em;
+    font-size: 1em;
+    background: #f7f7f7;
+    text-decoration:underline;
+    border: 0px;
+  }
+
+
+  
+  .mu-toast{
+    width:toRem(231);
+    height:auto;
+    background:rgba(0,0,0,1);
+    border-radius:10px;
+    opacity:0.6;
+    line-height: normal;
+    white-space: normal;
+    bottom: auto;
+    padding: 1em 2em;
+    color: #fff;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(toRem(-231 / 2), toRem(-123 / 2));
+    margin: 0 auto;
+    font-size: 1em;
+  }
+    .btn{
+        line-height: 2.5;
+        font-size: 1.12em;
+        height: auto;
+        margin-top: 3em;
+        background:$C0BE9AF; 
+        border-radius: 3em;
+        width: 90%;
+        margin: 1em auto 1em auto;
+        // margin-left: 2%;
+        }
+}

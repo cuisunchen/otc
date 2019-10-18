@@ -1,0 +1,140 @@
+@import "../assets/css/config/Vars";
+body{
+    background: $white;
+}
+.content-app-down{
+    padding: 1em;
+  .app-logo-zone{
+      display: flex;
+      .app-logo-img-zone{
+          width: 6.8em;
+          height: 6.8em;
+        //   background: url("../assets/image/120.png") no-repeat center;
+        //   background-size: 100%;
+        //   border-radius: 2em;
+      }
+      .app-logo-font-zone{
+          margin-left: 1.5em;
+          .logo-name{
+              font-size: 1.8em;
+              font-weight: 600;
+              margin: 0.35em 0px;
+              color:$blue;
+              text-align: left;
+              line-height: 1.2;
+              margin-top: 0.8em;
+          }
+          .logo-name-bottom{
+            font-size: 1em;
+            font-weight: 600;
+            margin:0em 0px;
+            text-align: left;
+          }
+      }
+  }
+  .btn-an-zone{
+      background: $white;
+      padding: 1.5em;
+      margin-top: 2em;
+  }
+  .btn-an{
+    background: linear-gradient(90deg,#1874f0,#28aaf2);
+    display: inline-block;
+    color:$white;
+    border-radius: 3em;
+    line-height: 3.2;
+    width: 100%;
+}
+    .app-title{
+        font-size: 1.2em;
+        padding-left: 0.6em;
+        position: relative;
+        text-align: left;
+        margin: 1.5em 0px;
+        margin-bottom: 0.5em;
+    }
+    .app-title:before{
+        position: absolute;
+        content: '';
+        top:0.15em;
+        left:0px;
+        width: 0.15em;
+        height: 1em;
+        background: $blue;
+    }
+    .img3-zone{
+        display: flex;
+        .img-zone{
+            width: 33.3333%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .app-anzhuang-img{
+        width: 9.5em;
+        height: 9.5em;
+        border-radius: 100%;
+        overflow: hidden;
+        img{
+            width: 100%;
+            display: block;
+        }
+    }
+    .step-ft-zone{
+        flex:1;
+        padding-right: 1em;
+        text-align: left;
+    }
+    .step{
+        background: linear-gradient(90deg,#1874f0,#28aaf2);
+        width: 2.2em;
+        height: 2.2em;
+        border-radius: 100%;
+        color: $white;
+        display: block;
+        line-height: 2.2em;
+        text-align: center;
+    }
+    .step-ft{
+        span{
+            color:$blue;
+        }
+    }
+    .app_down_div_tip{
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 999;
+        background-color: #1d2a3b;
+        width: 100%;
+        height: 100em;
+        opacity:0.8;
+        background:#000;
+        .p{
+            position:relative;
+            width: 100%;
+            img{
+                position: absolute;
+                width:3em;
+                height:2.8em;
+               
+                right: 1.5em;
+                
+            }
+           }
+            
+            .p1{
+                text-align: center;
+                color: white;
+            }
+            .p2{
+                text-align: center;
+                color: white;
+                margin-top: 0em;
+                span{
+                    color: #ffd700;
+                }
+            }
+    }
+}

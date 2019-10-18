@@ -1,0 +1,17 @@
+@import "./Vars";
+@for $i from 12 through 30
+{
+    .fs-#{$i}
+    {
+        font-size: ($i*1rem/15) !important;
+    }
+}
+
+#app .btn-default{
+    background: $btn_default;
+    border-radius: toRem(4);
+}
+
+#app .mu-raised-button-label{
+    
+}

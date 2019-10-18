@@ -1,0 +1,245 @@
+@import "../assets/css/config/Vars";
+body{
+    max-width: 640px;
+}
+
+.content{ 
+    background: transparent;
+    position: relative;
+    padding-top: 5.8em;
+    .top{
+        height: 3em;
+        width: 100%;
+        background:  $topBg;
+        position: relative;
+        position: fixed;
+        top:0px;
+        z-index: 999;
+        box-shadow: 0px 1px 2px rgba(0,0,0,.1);
+        max-width: 640px;
+        .left {
+            position: absolute;
+            top:0.8em;
+            left: 1em; 
+            width: 1.35em;
+            height: 1.35em;
+            background: url("../assets/image/arrow_left.png") no-repeat center;
+            background-size: cover;
+          }
+        .right{
+            position: absolute;
+            right: 2em;
+            top: 1em;
+            color: $white;
+            font-size: 1em;
+        }
+        .center{
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            top: 1em;
+            color: $white;
+            font-size: 1em;
+            line-height: 1em;
+        }
+        // /deep/.icon-top{
+        //     position: absolute;
+        // }
+        .icon-top{
+            position: relative;
+            // background: #fff;
+            top:2.2em;
+            left: 20px;
+            color: transparent;
+        }
+        .img-arrow{
+            position: absolute;
+            right: 1em;
+            top: 1.5em;
+            width: 0.7em;
+            height: 0.4em;
+            background:url("../assets/image/pull_down.png") no-repeat center;
+            background-size: cover;
+        }
+    }
+    .tab{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        max-width: 640px;
+        height:2.4em;
+        // padding-top: 1.2em;
+        background: #fff;
+        position: fixed;
+        top:3em;
+        z-index: 999;
+        button{
+            width: 50%;
+            height: 2.4em;
+            text-align: center;
+            font-size: 1em;
+            border-style: none;
+            background: #fff;
+            color:  $silver;
+            border-bottom: 1px solid $silver;
+            outline:none;
+        }
+        button.tab1{
+            border-bottom:2px solid $blue;
+            color: $topBg;
+       }
+       button.tab2{
+        border-bottom:2px solid $blue;
+        color: $topBg;
+      }
+    }
+    .my-ad-item-list{
+        margin-bottom: 0.8em;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+        .my-ad-item-list-content-zone{
+            background: $white;
+        .p-title{
+            margin: 0em 0em;
+            padding: 0.5em 1em;
+            padding-bottom: 0.4em;
+            border-bottom: 1px solid $border;
+            display: inline-block;
+            width: 100%;
+            text-align: left;
+            .span-left{
+            float: left;
+            color: #333;
+            font-size: 1em;
+            margin-right: 0.5em;
+            font-weight: 600;
+            }
+            .span-right{
+                float: right;
+                color: $tradeBuy;
+                font-size: 0.8em;
+                margin-top: 0.2em;
+            }
+            .hint-gray{
+                color: $CC1C1C1;
+            }
+            .hint-red{
+                color: $hint;
+            }
+            .pay-span{
+                display: inline-block;
+                margin-left: 0.3em;
+                border-radius: 0.3em;
+                background: #55abf5;
+                padding: 0.3em 0.5em 0.2em 0.5em;
+                line-height: 1;
+                color:  $white;
+                font-size: 0.65em;
+                vertical-align: middle;
+                position: relative;
+                top:-0.2em;
+            }
+            .wx{
+                background: #31cc93;
+            }
+            .bank{
+                background: #fc864c;
+                margin-left: 0.6em;
+            }
+        }
+        .ads-datail{
+            padding:1em; 
+            padding-top: 0px;
+        }
+        .divider{
+            height: 1px;
+            width: 100%;
+            margin-top: 1.6em;
+            background-color: $CC1C1C1;
+        }
+        .p-price{ 
+            margin:1em 0 0 0;
+            line-height: 1em;
+            font-size: 0.85em;
+            text-align: left;
+            padding: 0em 0em;
+            .span-color-40{
+            color: $C404040;
+            float: right;
+            }
+            .span-buy{
+                color:$tradeBuy;
+                font-weight: 500;
+            }
+            .span-sell{
+                color:$tradeSell;
+                font-weight: 500;
+            }
+            .span-color-80{
+                color: $C808080;
+            }
+            .span-pay{
+                border-radius: 0.1em;
+                background-color:$aqua_green;
+                margin: 0.1em 0em 0.1em 0.3em;
+                padding: 0.1em 0.3em 0.1em 0.3em;
+                font-weight: 100;
+                color: $white;
+                font-size: 0.7em;
+                line-height: 0.8em;
+                text-align: center;
+            }
+        }
+        .div-operation{
+            position: relative;
+            border-top:0.5px solid $border;
+            text-align: right;
+            padding:0.8em 1em;
+                button{
+                    border: 0.5px solid $blue;
+                    border-radius: 0.2em;
+                    color: $blue;
+                    font-weight: 200;
+                    background: transparent;
+                    line-height: 1;
+                    text-align: center;
+                    padding:0.25em 0.8em;
+                    font-size: 0.8m;
+                    margin: 0 0;
+                    vertical-align: middle;
+                    outline:none
+                }
+                .red-button{
+                    border: 0.5px solid $hint;
+                    color: $hint;
+                }
+                
+        }
+
+        }
+        .item-divider{
+            margin-top: 1.5em;
+            height: 0.5em;
+            width: 100%;
+            background-color: #f5f5f5;
+        }
+    }
+
+    .mu-toast{
+        width:toRem(231);
+        height:auto;
+        background:rgba(0,0,0,1);
+        border-radius:10px;
+        opacity:0.6;
+        line-height: normal;
+        white-space: normal;
+        bottom: auto;
+        padding: 1em 2em;
+        color: #fff;
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(toRem(-231 / 2), toRem(-123 / 2));
+        margin: 0 auto;
+        font-size: 1em;
+      }
+}

@@ -1,0 +1,165 @@
+@import "../assets/css/config/Vars";
+// body{
+//     margin-bottom: 3em;
+// }
+
+.content{ 
+    background: #f7f7f7;
+    position: relative;
+    padding-bottom: 5em;
+    padding-bottom: 3em;
+    .top{
+        height: 3em;
+        width: 100%;
+        background:  $topBg;
+        position: relative;
+        position: fixed;
+        top:0px;
+        z-index: 999;
+        box-shadow: 0px 1px 2px rgba(0,0,0,.1);
+        max-width: 640px;
+        
+        .center{
+            position: absolute;
+            width: 100%;
+            top: 1em;
+            color: $white;
+            font-size: 1em;
+            text-align: center;
+            line-height: 1;
+        }
+    }
+    .img-bananer {
+        padding-top: 3em;
+        width: 100%;
+        display: block;
+      }
+    .content-detail{
+       padding: 0px;
+        .content-detail-div{
+            font-size: 1em;
+            padding: 0.8em 1em;
+            background: $white;
+            box-shadow: 0px 1px 2px rgba(0,0,0,.1);
+            margin-bottom: 0.4em;
+            // display: flex;
+            p{
+                margin: 0 0;
+                padding: 0 0;
+                text-align: left;
+               
+                .span-left{
+                    color: $C404040;
+                }
+                .span-right{
+                    float: right;
+                    color: $blue;
+                }
+            }
+            
+        }
+        .p2_zone{
+            padding: 0px 1em;
+            background: $white;
+            box-shadow: 0px 1px 2px rgba(0,0,0,.1);
+            margin-bottom: 1em;
+        }
+        .p2{
+            font-size: 0.8em;
+            text-align: left;
+            margin: 0em 0 0em 0;
+            padding: 1em  0px ;
+            background: $white;
+            .span-left{
+                color: $C808080;
+            }
+            .span-right{
+                float: right;
+                color: $C808080;
+                span{
+                    color: $blue;
+                    margin-right: 0.2em;
+                }
+            }
+        }
+        .p2_bototm{
+            border-bottom: 0px;
+        }
+        .item-dever{
+            height: 1px;
+            background-color: #f5f5f5;
+            width: 100%;
+        }
+        .p3{
+            color: $orange_red;
+            margin-top: 0.45em;
+            margin-bottom: 0em;
+            font-size: 0.8em;
+            text-align: left;
+            padding: 0px 1.2em;
+        }
+    }
+    .share_btn_zone{
+        padding-left: 0.8em;
+        background: $white;
+        box-shadow: 0px 1px 2px rgba(0,0,0,.1);
+        .share_btn{
+            display: flex;
+            background: $white;
+            .share_ico{
+                margin-top: 0.5em;
+            }
+            span{
+                width: 100%;
+                text-align: left;
+                margin-left: 0.8em;
+                line-height: 3em;
+            }
+            .go{
+                display: inline-block;
+                width: 2em;
+                height: 3em;
+                background: url("../assets/image/more.png") no-repeat center;
+                background-size: 100%;
+            }
+        }
+        .bottom_border{
+            border-bottom:1px solid $border;
+        }
+    }
+    .btn{
+        line-height: 2.4;
+        font-size: 1.12em;
+        height: auto;
+        margin-top: 0.5em;
+        background:$main; 
+        }
+
+    .btn1{
+        line-height: 2.4;
+        font-size: 1.12em;
+        height: auto;
+        margin-top: 0.8em;
+        background:$main; 
+        }
+
+        .mu-toast{
+            width:toRem(231);
+            height:auto;
+            background:rgba(0,0,0,1);
+            border-radius:10px;
+            opacity:0.6;
+            line-height: normal;
+            white-space: normal;
+            bottom: auto;
+            padding: 1em 2em;
+            color: #fff;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(toRem(-231 / 2), toRem(-123 / 2));
+            margin: 0 auto;
+            font-size: 1em;
+          }
+    
+}

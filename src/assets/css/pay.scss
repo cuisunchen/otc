@@ -1,0 +1,477 @@
+@import "../../assets/css/config/Vars";
+
+
+.content{ 
+    background: transparent;
+    position: relative;
+    padding-bottom:1px;
+    background: #ffffff;
+    // padding-top: 3em;    
+    .radio-zone{
+        background:#fff;
+        display:flex;
+        padding:1em;
+        border-bottom:1px solid #eee;
+        .mu-radio {
+            position: relative;
+            display: inline-block;
+            height: 12px;
+            line-height: 12px;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            float: left;
+            margin-right: 1.5em;
+            /deep/ .mu-radio-wrapper{
+                .mu-radio-label{
+                    color:$silver;
+                    font-size: 01em
+                }
+            }
+            /deep/ .mu-radio-icon{
+                margin-right: 0.3em;
+            }
+            /deep/ .mu-radio-icon-uncheck{
+                color:$border;
+                width: 1.4em;
+                height: 1.4em;
+                margin-top: 0.1em;
+            }
+        
+            /deep/ .mu-radio-icon-checked{
+                color:$blue;
+                width: 1.4em;
+                height: 1.4em;
+                margin-top: 0.1em;
+            }
+    }
+    .activeRadio{
+        /deep/ .mu-radio-wrapper{
+            .mu-radio-label{
+                color:$blue;
+            }
+        }
+    }
+}
+    .top{
+        position: relative;
+        width: 100%;
+        height: toRem(44);
+        line-height: toRem(44);
+        background:#fff;
+        z-index: 999;
+        .center{
+            position: absolute;
+            width: 100%;
+            color: #2E3546;
+            text-align: center;
+            font-weight:500;
+        }
+        .left {
+            position: absolute;
+            top:0.8em;
+            left: 1em; 
+            width: 1.35em;
+            height: 1.35em;
+            background: url("../assets/image/arrow_left.png") no-repeat center;
+            background-size: cover;
+          }
+          .right{
+            position: absolute;
+            right: 1em;
+            top: 1em;
+            color: $white;
+            font-size: 1em;
+            line-height: 1;
+        }
+    }
+    .publish-crypto-currency-item{
+            display: flex;
+            align-items: center;
+            height:toRem(50);
+            line-height: toRem(50);
+            padding: 0 1em;
+            background: $white;
+            position: relative;
+        .img-arrow {
+            position: absolute;
+            right: toRem(25);
+            top: toRem(18);
+            width: toRem(10);;
+            height: toRem(13);
+            background: url("../assets/image/arrow_right.png") no-repeat center;
+            background-size: cover;
+        }
+        p{
+            position: absolute;
+            bottom: 0.6em;
+            left: 1.2em;
+            margin: 0 0;
+            padding: 0 0 0 0em;
+            color: $hint;
+            font-size: 0.85em;
+        }
+        .txt{
+            color: #4E586E;
+            margin-right: 0.5em;
+            width: 7em;
+            display: inline-block;
+            text-align: left;
+        }
+        .mu-dropDown-menu-text-overflow {
+            white-space: nowrap;
+            overflow: hidden;
+            width: 100%;
+            text-align: left;
+            margin-bottom: 0;
+            font-family:PingFangSC;
+            font-weight:400;
+            color:rgba(78,88,110,1);
+            font-size: 14px;
+            /deep/ {
+                .mu-dropDown-menu-text{
+                    height: toRem(50);
+                    line-height: toRem(50);
+                }
+            }
+            /deep/ .mu-text-field-content{
+                padding-top: 0px;
+                padding-bottom: 0px;
+                /deep/.mu-dropDown-menu{
+                    font-size: 14px;
+                    height: toRem(50);
+                    line-height: toRem(50);
+                }
+                /deep/.mu-text-field-focus-line{
+                    height: 0px;
+                }
+                /deep/.mu-text-field-line{
+                    height: 0px;
+                }
+            }
+            
+        }
+    }
+    .p1{
+        color:  $orange_red;
+        font-size: 0.8em;
+        text-align: left;
+        padding-left: 1em;
+        padding-right: 1em;
+        margin: 1em 0px;
+        
+    }
+    .div-empty{
+        width: 100%;
+        height:1em;
+    }
+    .set-content-item{
+        width: 100%;
+        margin-top: 0.1em;
+        padding: 1em;
+        display: flex;
+        background: #fff;
+        .img_left{
+            width: 2.5em; 
+            height:2.03em;
+        }
+        p{
+            padding: 0em; 
+            margin: 0.5em 0em 0em 0.7em; 
+            width: 100%;
+            font-size: 0.8em;
+            color: #404040;
+            text-align: left;
+            span{
+                float: right;
+                color: $main;
+            }
+        }
+        
+    }
+    .login-pay{
+        width: 100%;
+        text-align: left;
+        // box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05) inset;
+        .txt{
+            margin:1rem 1.13rem;
+            height:toRem(20);
+            line-height: toRem(20);
+        }
+        .pay-text-zone{
+            padding: 0 1em;
+            // box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
+            background: $white;
+            // border-top:1px solid $border;
+            height: toRem(168);
+            /deep/ {
+                .mu-text-field-multiline{
+                    width:toRem(345);
+                    height:toRem(150);
+                    background:rgba(243,245,247,1);
+                    border:1px solid rgba(226,226,226,1);
+                    padding:0.87rem 0 0 0.47rem;
+                }
+                .mu-text-field-input.mu-text-field-textarea{
+                    color: #2c3e50 !important;
+                    font-size: 14px;
+                }
+                .mu-text-field-hint{
+                    z-index:2;
+                    height:toRem(20);
+                    font-size:14px;
+                    font-family:PingFangSC;
+                    font-weight:400;
+                    color:rgba(183,189,202,1);
+                    line-height:toRem(20);
+                    margin:0.87rem 0 0 0.47rem;
+                }
+                .mu-text-field-input.mu-text-field-textarea{
+                    height:20px;
+                    font-size:14px;
+                    font-family:PingFangSC;
+                    font-weight:400;
+                    color:rgba(183,189,202,1);
+                    line-height:20px;
+                }
+            }
+        }
+        .img-tips{
+            height:toRem(20);
+            font-size:14px;
+            font-family:PingFangSC;
+            font-weight:400;
+            color:rgba(109,119,139,1);
+            line-height:toRem(20);
+            padding-left: 1.13rem;
+        }
+        .pay-qr-title{
+            padding-left: 1em;
+            margin: 0px;
+            line-height: 2.8;
+            span{
+                font-size: 0.8em;
+                color: $blue;
+                float: right;
+                margin-top: 0.3em;
+                margin-right: 1em;
+                a{
+                    color: $blue;
+                }
+            }
+        }
+        .pay-qr-zone{
+            display: flex;
+            // margin-top: 4em;
+            background: $white;
+            padding: 1em;
+            div{
+                width: 15rem;
+                height: 4.8rem;
+                overflow: hidden;
+                margin-right: 1em;
+            }
+            img{
+                width: 100%;
+                vertical-align: middle;
+                margin: 0px;
+            }
+            .pay-qr-btn{
+                border: 1px solid $border;
+                background:  url("../assets/image/add.svg") no-repeat center;
+                background-size: 30% 70%;
+                width: 4.8rem;
+                height: 4.8rem;
+                input{
+                    height: 4.8rem;
+                    opacity: 0;
+                }
+            }
+        }
+        .pay-item{
+            display: flex;
+            border-bottom: 1px solid $border;
+            position: relative;
+            padding: 0.8em 0px;
+            font-size: 0.8em;
+            position: relative;
+            p{
+                position: absolute;
+                text-align: left;
+            }
+            span{
+                color: $C808080;
+                font-size: 1em;
+                margin-right: 0.5em;
+                white-space:nowrap; 
+                padding-top: 0.45em;
+                display: inline-block;
+                width: 7em;
+                text-align: left;
+                height: 2em;
+                position: relative;
+                
+            }
+            .mu-text-field-input {
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+                outline: none;
+                border: none;
+                background: none;
+                border-radius: 0 0 0 0;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+                display: block;
+                padding: 0;
+                margin: 0;
+                width: 100%;
+                height: 2.1em;
+                font-style: inherit;
+                font-variant: inherit;
+                font-weight: inherit;
+                font-stretch: inherit;
+                font-size: 1em;
+                color: rgba(0, 0, 0, .87);
+                font-family: inherit;
+                position: relative;
+                text-align: left;
+                font-size: 1.2em;
+                /deep/ .mu-text-field-content{
+                    padding: 0px;
+                }
+                /deep/ .mu-text-field-line{
+                    height: 0px;
+                }
+                /deep/ .mu-text-field-focus-line{
+                    height: 0px;
+                }
+            }
+            .more-btn{
+                display: inline-block;
+                width: 2em;
+                height: 2em;
+                background: url("../assets/image/more.png") no-repeat center;
+                background-size: 100%;
+                position: absolute;
+                right:0em;
+                top:0.85em;
+            }
+            .pay-bank-ft{
+                position: absolute;
+                top:1.1em;
+                right:3em;
+                margin: 0px;
+
+            }
+        }
+        .input-zone{
+         .mu-text-field-content {
+             display: block;
+             height: 100%;
+             padding-bottom: 1em;
+             padding-top: 0.5em;
+             .mu-text-field-focus-line{
+                 background-color: $blue;
+                 height: 1px;
+            }
+         }
+        }
+        img{
+            width: 80%;
+            margin-left: 1em;
+        }
+    }
+    .btn-zone{
+        padding: 1em;
+        background: $white;
+        padding-bottom: 2em;
+        margin-bottom: 0.8em;
+        // box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
+    }
+    .btn{
+        line-height: 2.5;
+        background:#FFA100;
+        border-radius: 3em;
+        width:toRem(345);
+        height:toRem(50);
+        background:rgba(0,94,228,1);
+        border-radius:toRem(4);
+        }
+     .mu-toast{
+        width:toRem(231);
+        height:auto;
+        background:rgba(0,0,0,1);
+        border-radius:10px;
+        opacity:0.6;
+    
+        // height: 2.2em;
+        line-height: normal;
+        white-space: normal;
+        bottom: auto;
+        padding: 1em 2em;
+        // background-color: rgba(0, 0, 0, .75);
+        color: #fff;
+        // border-radius: 0.1em;
+        // white-space: nowrap;
+        // -o-text-overflow: ellipsis;
+        // text-overflow: ellipsis;
+        // overflow: hidden;
+        // word-wrap: break-word;
+        // max-width: 100%;
+        // width: 100%;
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(toRem(-231 / 2), toRem(-123 / 2));
+        margin: 0 auto;
+        font-size: 1em;
+     }
+    .mask{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top:0px;
+        background: $white;
+        z-index: 999;
+        
+        .mask-zone{
+            margin: 0 auto;
+            width:100%;
+            max-width: 640px;
+            height: 100%;
+            overflow: scroll;
+            padding-top: 3em;
+            padding-left: 1em;
+            .mask-top{
+                height: 3em;
+                width: 100%;
+                background:  $topBg;
+                position: absolute;
+                top:0px;
+                left: 0px;
+                z-index: 999;
+                box-shadow: 0px 1px 2px rgba(0,0,0,.1);
+                max-width: 640px;
+                p{
+                    margin: 0px;
+                    padding: 0px 1em;
+                    color: $white;
+                    font-size: 1em;
+                    line-height: 3em;
+                    text-align: left;
+                    .right-ft{
+                        float:right;
+                    }
+                }
+            }
+            .bank_list{
+                padding: 0.65em 0px;
+                border-bottom: 1px solid $border;
+                text-align: left;
+            }
+        }
+    }
+}

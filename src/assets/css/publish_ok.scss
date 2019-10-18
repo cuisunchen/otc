@@ -1,0 +1,139 @@
+@import "../assets/css/config/Vars";
+// #app{
+//     // margin-bottom: 3em;
+//     max-width: 640px;
+//     background: #f7f7f7;
+// }
+.mu-menu-item-wrapper {
+    .active{
+        color: #3d9cee;
+    }
+    
+}
+.content-publish-ok{ 
+    background: #F3F5F7;
+    position: relative;
+    height: 100%;
+    .top-icon{
+        width: toRem(41);
+        height: toRem(41);
+        margin:5rem auto toRem(5) auto;
+    }
+    .succee-hint{
+        color: #005EE4;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .bottom-hint{
+        color: #6D778B;
+        font-size: 14px;
+        margin-top: 8px;
+    }
+    .top-wrap{
+        width: 100%;
+        height: toRem(210);
+        margin: 0px auto;
+        background: white;
+    }
+    .btn-wrap{
+        width: calc(100% - 2rem);
+        margin: auto;
+        background: #F3F5F7;
+        margin-top: toRem(23);
+    }
+    .top{
+        height: 3em;
+        width: 100%;
+        background:  $topBg;
+        position: relative;
+        position: fixed;
+        top:0px;
+        z-index: 999;
+        max-width: 640px;
+
+        
+        .center{
+            position: absolute;
+            top: toRem(8);
+            color: #2E3546;
+            font-size: toRem(16);
+            text-align: center;
+            left: 0;
+            right: 0;
+        }
+        .left {
+            position: absolute;
+            top:0.7em;
+            left: 1em; 
+            width: 1.35em;
+            height: 1.35em;
+            background: url("../assets/image/arrow_left.png") no-repeat center;
+            background-size: cover;
+          }
+       
+        .right{
+            position: absolute;
+            right: 1em;
+            top: 0em;
+            color: $white;
+            font-size: 1em;
+            line-height: 3em;
+            height: 3em;
+            padding-right: 1em;
+        }
+  
+        .icon-top{
+            position: relative;
+            // background: #fff;
+            top:2.4em;
+            left: 20px;
+            color: transparent;
+        }
+        .img-arrow{
+            position: absolute;
+            right: 1em;
+            top: 1.25em;
+            width: 0.7em;
+            height: 0.4em;
+            background:url("../assets/image/pull_down.png") no-repeat center;
+            background-size: cover;
+        }
+    }
+    
+//////
+.mu-toast{
+    width:toRem(231);
+    height:auto;
+    background:rgba(0,0,0,1);
+    border-radius:10px;
+    opacity:0.6;
+    line-height: normal;
+    white-space: normal;
+    bottom: auto;
+    padding: 1em 2em;
+    color: #fff;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(toRem(-231 / 2), toRem(-123 / 2));
+    margin: 0 auto;
+    font-size: 1em;
+  }
+
+.btn{
+    line-height: 2.5;
+    font-size: 18px;
+    height: auto;
+    width: calc(50% - 5px);
+    display: inline-block;
+    // margin-left: 2%;
+    }
+.btn-border{
+    background: white;
+    border: 1px solid #005EE4;
+    color: #005EE4;
+    border-radius: 0.26667rem;
+    margin-right: 6px;
+}
+    
+}

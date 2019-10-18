@@ -1,0 +1,77 @@
+@import "../assets/css/config/Vars";
+.bottom_nav_zone1{
+    position: fixed;
+    width: 100%;
+    max-width: 640px;
+    height: 50px;
+    bottom:0px;
+    // left: 0px;
+    z-index: 999;
+}
+.bottom_nav1{
+    // background: $lgray;
+    background: rgba(253,254,255,1);
+    border-top:1px solid $border;
+    width: 100%;
+    max-width: 640px;
+    margin: 0px;
+    display: flex;
+    margin: 0 auto;
+    height: 50px;
+}
+.bottom_nav_btn_zone1{
+    flex:1;
+    display: inline-block;
+    text-align: center;
+    padding-top: 7px;
+    line-height: 0 !important;
+    padding-bottom: 0.1em;
+    color:$ico;
+    text-decoration: none;
+    height: 50px;
+    .div1{
+        display: block;
+        margin: 0 auto;
+        width: 20px;
+        height: 20px;
+        background: url('../assets/image/tab1_n.png') no-repeat center;
+        background-size: 100% 100%;
+    }
+    .div2{
+        display: block;
+        margin: 0 auto;
+        width: 20px;
+        height: 20px;
+        background: url('../assets/image/tab2_p.png') no-repeat center;
+        background-size: 100% 100%;
+    }
+    .div3{
+        display: block;
+        margin: 0 auto;
+        width: 20px;
+        height: 20px;
+        background: url('../assets/image/tab3_n.png') no-repeat center;
+        background-size: 100% 100%;
+    }
+    span{
+        font-size: 0.8em;
+        line-height: 1.4;
+        color: 	#9EA9C3;
+    }
+}
+.router-link-active{
+    // color: $blue;
+    color:#0A2463
+}
+.active{
+    // div{
+    //     // color:$main !important;
+    //     color:#0A2463
+    // }
+   
+    // span{
+    //     // color:$main !important;
+    //     color:#0A2463
+    // }
+}
+

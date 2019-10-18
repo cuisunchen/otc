@@ -1,0 +1,270 @@
+@import "../assets/css/config/Vars";
+body{
+    background: $white;
+}
+.content{
+    position: relative;
+    .top{
+        width: 100%;
+        height: 3em;
+        background: $topBg;
+        .left {
+            position: absolute;
+            top:0.8em;
+            left: 1em; 
+            width: 1.35em;
+            height: 1.35em;
+            background: url("../assets/image/arrow_left.png") no-repeat center;
+            background-size: cover;
+            button{
+                background: transparent;
+            }
+          } 
+        .center{
+            position: absolute;
+            width: 100%;
+            top: 1em;
+            color: $white;
+            font-size: 1em;
+            text-align: center;
+        }
+        .right{
+            position: absolute;
+            right: 1em;
+            top: 1em;
+            color: $white;
+            font-size: 1em;
+        }
+    }
+
+    .buy-item-info{
+        display: flex;
+        margin: 0 0;
+        padding: 1em;
+        background: $white;
+        margin-bottom: 0.8em;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+        .buy-item-info-head{
+          width: 2.5em;
+          height: 2.5em;
+          border-radius: 100%;
+          background: $blue;
+          color: $white;
+          line-height: 2.5em;
+          text-align: center;
+          font-size: 1.5em;
+          font-weight: 300;
+          margin-top: 0.35em;
+          margin-right: 0.5em;
+        }
+        .buy-item-info-head-online{
+            width: 0.8em;
+            height: 0.8em;
+            border-radius: 100%;
+            background: rgb(8, 223, 8);
+            margin: 3.3em 0em 0em -0.8em;
+            padding: 0 0;
+        }
+        .buy-item-info-head-center{
+            float: 1;
+            flex: 1;
+            h4{ 
+                margin:0.2em 0 0 0;
+                line-height: 1em;
+                font-size: 1em;
+                text-align: left;
+                padding: 0.2em 0em 0.2em 0em;
+                font-weight: 600;
+                color: $blue;
+                span{
+                    border-radius: 0.1em;
+                    background-color:$aqua_green;
+                    margin: 0.1em 0em 0.1em 0.5em;
+                    padding: 0.1em 0.3em 0.1em 0.3em;
+                    font-weight: 100;
+                    color: $white;
+                    font-size: 0.7em;
+                    line-height: 0.8em;
+                    text-align: center;
+                }
+            }
+            p{
+                margin:0.5em 0 0 0;
+                line-height: 1em;
+                font-size: 0.75em; 
+                text-align: left;
+                padding: 0.2em 0em 0.2em 0em;
+                color: $C808080;
+                display: flex;
+            }
+            .p1{
+                margin:0.2em 0 0 0;
+                line-height: 1em;
+                font-size: 0.5em; 
+                text-align: left;
+                padding: 0.2em 0em 1em 1em;
+                color: $C808080;
+                display: flex;
+            }
+            .pay{
+                margin-top: 0.3em;
+                span{
+                    display: inline-block;
+                    margin-right: 0.5em;
+                    border-radius: 0.3em;
+                    background: $border-pay;
+                    padding: 0.3em 0.5em 0.2em 0.5em;
+                    line-height: 1;
+                    color:  $white;
+                }
+            }
+        }
+        .buy-item-info-head-right{
+           p{
+              text-align: right;
+              color:$tradeBuy;
+              margin: 0 0;
+              font-size: 1.5em;
+              font-weight: 600;
+              line-height: 1.2;
+              span{
+                  font-weight: 400;
+                  display: block;
+                  font-size: 0.5em;
+                  color: $CC1C1C1;
+
+              }
+          }
+          .isBuyright{
+            color: $tradeSell;
+        }
+       }
+      
+    }
+    
+    .buy-item-diver{
+        background: $CF5F5F5;
+        height: 0.3em;
+        width: 100%;
+    }
+    .wen_title{
+        text-align: left;
+        margin: 0.65em 0px;
+        margin-left: 1em;
+    }
+    .buy-item-input{
+        margin: 0 0;
+        padding: 1em;
+        background: $white;
+        padding-bottom: 1.5em;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+        p{
+            text-align: left;
+            padding: 0 0;
+            margin: 0 0;
+            padding-bottom: 0.5em;
+            border-bottom: 1px solid $border;
+        }
+        .input{
+            width: 100%;
+            margin-top: 0.6em;
+            // padding: 1.5em 2.5em;
+            text-align: left;
+            .input-zone{
+                text-align: left;
+             .mu-text-field-content {
+                 display: block;
+                 height: 100%;
+                 padding-bottom: 1em;
+                 padding-top: 0.5em;
+             }
+            }
+            
+        }
+    }
+
+    .buy-item-tip{
+        text-align: left;
+        margin: 0 0;
+        padding: 1em;
+        background: $white;
+       line-height: 1.8;
+       font-size: 0.7em;
+       p{
+           margin:0px;
+           margin-bottom: 0.5em;
+           color: $ico;
+       }
+    }
+    
+    .captcha-zone{
+        position: relative;
+        margin-bottom:0.8em;
+        .div-send-code{
+            position: absolute;
+            bottom: 1em;
+            width: 4.5em;
+            height: 2em;
+            right: 0px;
+             background:transparent; 
+             text-align: right; 
+             color:$black; 
+             line-height:2em;
+           }
+        .captcha-zone-tip{
+            position: absolute;
+            top: -0.35em;
+            line-height: 0.7em;
+            margin: 0 0;
+            padding: 0 0;
+            font-size: 0.7em;
+            color: $blue;
+        }
+        .input-zone{
+           /deep/ .mu-text-field-content {
+                display: block;
+                height: 100%;
+                padding-bottom: 1em;
+                padding-top: 0.5em;
+                .mu-text-field-focus-line{
+                    background-color: $blue;
+                    height: 0px;
+               }
+            }
+           }
+    }
+    .captcha{
+         position: absolute;
+         bottom: 1.4em;
+         width: 7.5em;
+         height: 2em;
+         right: 0px;
+         background-size: cover;
+         background-repeat: no-repeat;
+    }
+   .btn{
+    line-height: 2.4;
+    font-size: 1.12em;
+    height: auto;
+    margin-top: 0.5em;
+    background:$blue; 
+    }
+    .mu-toast{
+        width:toRem(231);
+        height:auto;
+        background:rgba(0,0,0,1);
+        border-radius:10px;
+        opacity:0.6;
+        line-height: normal;
+        white-space: normal;
+        bottom: auto;
+        padding: 1em 2em;
+        color: #fff;
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(toRem(-231 / 2), toRem(-123 / 2));
+        margin: 0 auto;
+        font-size: 1em;
+      }
+}

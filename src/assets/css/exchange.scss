@@ -1,0 +1,574 @@
+@import "../assets/css/config/Vars";
+body {
+  background: $white;
+}
+
+.content-exchange {
+  background: transparent;
+  position: relative;
+  padding-bottom: 1px;
+  background: $white;
+  // margin-bottom: 4em;
+  .top {
+    height: 3em;
+    width: 100%;
+    background: $topBg;
+    position: relative;
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+    max-width: 640px;
+    .right {
+      position: absolute;
+      right: 1em;
+      top: 0em;
+      color: $white;
+      font-size: 1em;
+      line-height: 3em;
+      height: 3em;
+      padding-right: 1em;
+    }
+
+    .icon-top {
+      position: relative;
+      // background: #fff;
+      top: 2.4em;
+      left: 20px;
+      color: transparent;
+    }
+    .img-arrow {
+      position: absolute;
+      right: 1em;
+      top: 1.25em;
+      width: 0.7em;
+      height: 0.4em;
+      background: url("../assets/image/pull_down.png") no-repeat center;
+      background-size: cover;
+    }
+  }
+  .tab {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 640px;
+    height: 2.4em;
+    // padding-top: 1.2em;
+    background: #fff;
+    position: fixed;
+    top: 3em;
+    z-index: 999;
+    button {
+      width: 50%;
+      height: 2.4em;
+      text-align: center;
+      font-size: 1em;
+      border-style: none;
+      background: #fff;
+      color: $silver;
+      border-bottom: 1px solid $silver;
+      outline: none;
+    }
+    button.tab1 {
+      border-bottom: 2px solid $topBg;
+      color: $topBg;
+    }
+    button.tab2 {
+      border-bottom: 2px solid $topBg;
+      color: $topBg;
+    }
+  }
+  .exchange-zone {
+    margin-top: 5.3em;
+    .exchange-head-zone {
+      padding: 0.35em 1em;
+      line-height: 2;
+      font-size: 1em;
+      color: #999;
+      text-align: left;
+      .exchange-head-zone-span-left {
+        color: #404040;
+      }
+      .exchange-head-zone-span-right {
+        color: $blue;
+        float: right;
+        position: relative;
+        padding-right: 1em;
+      }
+      .go {
+        display: inline-block;
+        width: 1.5em;
+        height: 1.5em;
+        background: url("../assets/image/more.png") no-repeat center;
+        background-size: 100%;
+        margin-right: 0.3em;
+        position: absolute;
+        top: 0.2em;
+        right: -1em;
+      }
+    }
+    .exchange-data-zone {
+      display: flex;
+      .exchange-table-zone {
+        //    display: flex;
+        width: 47%;
+        padding: 0px 0px;
+        margin: 1em 1em;
+        background: #f5f5f5;
+        .table-zoneleft {
+          .exchange-table {
+            width: 100%;
+            font-size: 0.8em;
+            line-height: 1.3;
+            .ft-left {
+              width: 33.33%;
+              color: #999;
+              text-align: left;
+              padding-left: 0.5em;
+            }
+            .td-gray {
+              width: 33.33%;
+              color: $orange_red;
+              text-align: right;
+              padding-right: 0.75em;
+            }
+            .td-red {
+              width: 33.33%;
+              color: $orange_red;
+              text-align: right;
+              padding-right: 0.75em;
+            }
+          }
+          .p_red {
+            margin: 0px 0px;
+            padding: 0.3em 0px;
+            width: 100%;
+            text-align: center;
+            color: $orange_red;
+            font-size: 0.75em;
+            font-weight: bold;
+          }
+          .p_green {
+            margin: 0px 0px;
+            padding: 0.3em 0px;
+            width: 100%;
+            text-align: center;
+            color: $aqua_green;
+            font-weight: bold;
+            font-size: 0.75em;
+          }
+        }
+        .table-zoneright {
+          .exchange-table {
+            width: 100%;
+            font-size: 0.8em;
+            line-height: 1.3;
+            .ft-left {
+              width: 33.33%;
+              color: #999;
+              text-align: left;
+              padding-left: 0.5em;
+            }
+            .td-gray {
+              width: 33.33%;
+              color: $aqua_green;
+              text-align: right;
+              padding-right: 0.75em;
+            }
+            .td-green {
+              width: 33.33%;
+              color: $aqua_green;
+              text-align: right;
+              padding-right: 0.75em;
+            }
+          }
+        }
+      }
+    }
+    .exchange-input-zone {
+      width: 53%;
+      margin: 0px 0px;
+      padding: 1em 1em 1em 0px;
+      .exchange-input-btn-zone {
+        display: flex;
+        button {
+          width: 50%;
+          outline: none;
+        }
+        .buy-left-btn {
+          width: 50%;
+          flex: 1;
+          background-color: #00cc66;
+          border: 0px;
+          border-bottom-left-radius: 0.2em;
+          border-top-left-radius: 0.2em;
+          color: #fff;
+          line-height: 1.5;
+          &.disable {
+            border-style: solid;
+            border-width: 1px;
+            border-color: #00cc66;
+            color: #00cc66;
+            background-color: #ffffff;
+            cursor: auto;
+            &:hover {
+              background-color: #ffffff;
+            }
+          }
+          &:hover {
+            background-color: #00cc66;
+          }
+        }
+        .buy-right-btn {
+          width: 50%;
+          flex: 1;
+          background-color: #00cc66;
+          border: 0px;
+          border-bottom-right-radius: 0.2em;
+          border-top-right-radius: 0.2em;
+          color: #fff;
+          line-height: 1.5;
+          &.disable {
+            border-style: solid;
+            border-width: 1px;
+            border-color: #00cc66;
+            color: #00cc66;
+            background-color: #ffffff;
+            cursor: auto;
+            &:hover {
+              background-color: #ffffff;
+            }
+          }
+          &:hover {
+            background-color: #00cc66;
+          }
+        }
+        .sell-left-btn {
+          width: 50%;
+          flex: 1;
+          background-color: $orange_red;
+          border: 0px;
+          border-bottom-left-radius: 0.2em;
+          border-top-left-radius: 0.2em;
+          color: #fff;
+          line-height: 1.5;
+          &.disable {
+            border-style: solid;
+            border-width: 1px;
+            border-color: $orange_red;
+            color: $orange_red;
+            background-color: #ffffff;
+            cursor: auto;
+            &:hover {
+              background-color: #ffffff;
+            }
+          }
+          &:hover {
+            background-color: $orange_red;
+          }
+        }
+        .sell-right-btn {
+          width: 50%;
+          flex: 1;
+          background-color: $orange_red;
+          border: 0px;
+          border-bottom-right-radius: 0.2em;
+          border-top-right-radius: 0.2em;
+          color: #fff;
+          line-height: 1.5;
+          &.disable {
+            border-style: solid;
+            border-width: 1px;
+            border-color: $orange_red;
+            color: $orange_red;
+            background-color: #ffffff;
+            cursor: auto;
+            &:hover {
+              background-color: #ffffff;
+            }
+          }
+          &:hover {
+            background-color: $orange_red;
+          }
+        }
+      }
+      .exchange-input-buy {
+        margin-top: 0.7em;
+        width: 100%;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 4px 12px;
+        outline: none;
+      }
+      .exchange-input-buy:focus {
+        border: 1px solid #00cc66;
+      }
+      .exchange-input-buy {
+        margin-top: 0.7em;
+        width: 100%;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 4px 12px;
+        outline: none;
+      }
+      .exchange-input-buy:focus {
+        border: 1px solid #00cc66;
+      }
+      .btn-buy {
+        width: 100%;
+        line-height: 2;
+        font-size: 1em;
+        height: auto;
+        margin-top: 0.5em;
+        background: #00cc66;
+      }
+
+      .p-place-order {
+        width: 100%;
+        line-height: 2;
+        font-size: 0.8em;
+        height: auto;
+        margin-top: 1em;
+        color: $blue;
+        text-decoration: underline;
+        text-align: left;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        padding-top: 0.3em;
+        margin-top: 0em;
+      }
+      .exchange-input-sell {
+        margin-top: 0.7em;
+        width: 100%;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 4px 12px;
+        outline: none;
+      }
+      .exchange-input-sell:focus {
+        border: 1px solid $orange_red;
+      }
+      .exchange-input-sell {
+        margin-top: 0.7em;
+        width: 100%;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 4px 12px;
+        outline: none;
+      }
+      .exchange-input-sell:focus {
+        border: 1px solid $orange_red;
+      }
+      .btn-sell {
+        width: 100%;
+        line-height: 2;
+        font-size: 1em;
+        height: auto;
+        margin-top: 0.5em;
+        background: $orange_red;
+      }
+    }
+  }
+  input[placeholder],
+  [placeholder],
+  *[placeholder] {
+    color: #333333 !important;
+  }
+  input {
+    -webkit-appearance: none;
+  }
+  input::-webkit-input-placeholder,
+  textarea::-webkit-input-placeholder {
+    color: #ccc;
+  }
+  input:-moz-placeholder,
+  textarea:-moz-placeholder {
+    color: #ccc;
+  }
+  .exchange-diviler {
+    background: #f5f5f5;
+    height: 0.5em;
+    width: 100%;
+  }
+  .table-history {
+    .history_btn_zone {
+      text-align: left;
+      margin-top: 1em;
+      margin-bottom: 0px;
+      button {
+        background: transparent;
+        border: 0px;
+        // border-bottom:1px solid $main;
+        color: #999;
+        font-size: 1em;
+        padding: 0.2em 2.5em;
+        outline: none;
+      }
+      button.active {
+        border-bottom: 1px solid $blue;
+        color: $blue;
+      }
+    }
+  }
+  .table-history {
+    width: 100%;
+    font-size: 0.8em;
+    padding: 0px 1em;
+    color: #999;
+    .history-table {
+      width: 100%;
+      background: #f5f5f5;
+    }
+    .td-time {
+      width: 7em;
+    }
+  }
+  .mu-toast{
+    width:toRem(231);
+    height:auto;
+    background:rgba(0,0,0,1);
+    border-radius:10px;
+    opacity:0.6;
+    line-height: normal;
+    white-space: normal;
+    bottom: auto;
+    padding: 1em 2em;
+    color: #fff;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(toRem(-231 / 2), toRem(-123 / 2));
+    margin: 0 auto;
+    font-size: 1em;
+  }
+}
+.publish-safe-price-currency-item1 {
+  display: flex;
+  background: $white;
+  padding: 0.5em 1em;
+  border-top: 1px solid $border;
+  position: relative;
+  span {
+    color: #808080;
+    font-size: 0.8em;
+    margin-right: 0.5em;
+    width: 7em;
+    display: inline-block;
+    text-align: left;
+    padding-top: 0.5em;
+  }
+
+  .mu-text-field-input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+    background: none;
+    border-radius: 0 0 0 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    display: block;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 2.1em;
+    font-style: inherit;
+    font-variant: inherit;
+    font-weight: inherit;
+    font-stretch: inherit;
+    font-size: 1em;
+    color: rgba(0, 0, 0, 0.87);
+    font-family: inherit;
+    position: relative;
+    text-align: left;
+    /deep/ .mu-text-field-content {
+      padding: 0px;
+    }
+    /deep/ .mu-text-field-line {
+      height: 0px;
+    }
+    /deep/ .mu-text-field-focus-line {
+      height: 0px;
+    }
+  }
+  .mu-text-field-content {
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    text-align: left;
+    /deep/ .mu-text-field-content {
+      padding-top: 0px;
+      padding-bottom: 0px;
+      /deep/.mu-text-field-focus-line {
+        height: 0px;
+      }
+      /deep/.mu-text-field-line {
+        height: 0px;
+      }
+    }
+  }
+  .img-right-question1 {
+    margin: 0px !important;
+    position: absolute !important;
+    top: 1.3em !important;
+    right: 1.5em !important;
+    width: 1.2em;
+    height: 1.2em;
+  }
+}
+.div-diver-1px {
+  width: 100%;
+  height: 1px;
+  background-color: $border;
+}
+.btn-plan-buy {
+  line-height: 2.4;
+  font-size: 1.12em;
+  height: auto;
+  margin-top: 1.2em;
+  margin-bottom: 1.3em;
+  background: #00cc66;
+  color: #fff;
+  border: none;
+  width: 100%;
+}
+.mu-raised-button-primary {
+  /* background: #3d9cee; */
+}
+.btn-plan-sell {
+  line-height: 2.4;
+  font-size: 1.12em;
+  height: auto;
+  margin-top: 1.2em;
+  margin-bottom: 1.3em;
+  background: $orange_red;
+  color: #fff;
+  border: none;
+  width: 100%;
+}
+.mu-dialog-title {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 24px 24px 20px;
+  padding-top: 24px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  color: rgba(0, 0, 0, 0.87);
+  // display: none;
+}

@@ -1,0 +1,1065 @@
+@import "../assets/css/config/Vars";
+#app {
+  margin-bottom: 3em;
+  max-width: 640px;
+  background: #f7f7f7;
+}
+.mu-menu-item-wrapper {
+  .active {
+    color: #3d9cee;
+  }
+}
+.content {
+  background: #f7f7f7;
+  position: relative;
+  margin-bottom: 3.2em;
+  .top {
+    height: 3em;
+    width: 100%;
+    background: $topBg;
+    position: relative;
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+    max-width: 640px;
+    .right {
+      position: absolute;
+      right: 1em;
+      top: 0em;
+      color: $white;
+      font-size: 1em;
+      line-height: 3em;
+      height: 3em;
+      padding-right: 1em;
+    }
+    .center {
+      position: absolute;
+      text-align: center;
+      width: 100%;
+      top: 1em;
+      color: $white;
+      font-size: 1em;
+      line-height: 1em;
+    }
+    // /deep/.icon-top{
+    //     position: absolute;
+    // }
+    .icon-top {
+      position: relative;
+      // background: #fff;
+      top: 2.4em;
+      left: 20px;
+      color: transparent;
+    }
+    .img-arrow {
+      position: absolute;
+      right: 1em;
+      top: 1.25em;
+      width: 0.7em;
+      height: 0.4em;
+      background: url("../assets/image/pull_down.png") no-repeat center;
+      background-size: cover;
+    }
+  }
+  .tab {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 640px;
+    height: 2.4em;
+    // padding-top: 1.2em;
+    background: #fff;
+    position: fixed;
+    top: 3em;
+    z-index: 999;
+    button {
+      width: 33.333333%;
+      height: 2.4em;
+      text-align: center;
+      font-size: 1em;
+      border-style: none;
+      background: #fff;
+      color: $silver;
+      border-bottom: 1px solid $silver;
+      outline: none;
+    }
+    button.tab1 {
+      border-bottom: 2px solid $blue;
+      color: $topBg;
+    }
+    button.tab2 {
+      border-bottom: 2px solid $blue;
+      color: $topBg;
+    }
+    button.tab3 {
+      border-bottom: 2px solid $blue;
+      color: $topBg;
+    }
+  }
+  .my-ad-item-list {
+    margin-bottom: 0.8em;
+
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+    .my-ad-item-list-content-zone {
+      background: $white;
+      .p-title {
+        margin: 0em 0em;
+        padding: 0.5em 1em;
+        padding-bottom: 0.4em;
+        border-bottom: 1px solid $border;
+        display: inline-block;
+        width: 100%;
+        text-align: left;
+        button {
+          float: right;
+
+          border-radius: 0.2em;
+          background: $tradeBuy;
+          border: 0px;
+          color: $white;
+          line-height: 1.8em;
+          text-align: center;
+          width: 6em;
+          font-size: 0.95em;
+          margin: 0 0;
+          white-space: nowrap;
+        }
+        .span-left {
+          float: left;
+          color: #333;
+          font-size: 1em;
+          margin-right: 0.5em;
+          font-weight: 600;
+        }
+        .span-right {
+          float: right;
+          color: $tradeBuy;
+          font-size: 0.8em;
+          margin-top: 0.2em;
+        }
+        .hint-gray {
+          color: $CC1C1C1;
+        }
+        .hint-red {
+          color: $hint;
+        }
+        .pay-span {
+          display: inline-block;
+          margin-left: 0.3em;
+          border-radius: 0.3em;
+          background: #55abf5;
+          padding: 0.3em 0.5em 0.2em 0.5em;
+          line-height: 1;
+          color: $white;
+          font-size: 0.65em;
+          vertical-align: middle;
+          position: relative;
+          top: -0.2em;
+        }
+        .wx {
+          background: #31cc93;
+        }
+        .bank {
+          background: #fc864c;
+          margin-left: 0.6em;
+        }
+      }
+      .ads-datail {
+        padding: 1em;
+        padding-top: 0px;
+      }
+      .divider {
+        height: 1px;
+        width: 100%;
+        margin-top: 1.6em;
+        background-color: $CC1C1C1;
+      }
+      .p-price {
+        margin: 1em 0 0 0;
+        line-height: 1em;
+        font-size: 0.85em;
+        text-align: left;
+        padding: 0em 0em;
+        .span-color-40 {
+          color: $C404040;
+          float: right;
+        }
+        .span-buy {
+          color: $tradeBuy;
+          font-weight: 500;
+        }
+        .span-sell {
+          color: $tradeSell;
+          font-weight: 500;
+        }
+        .span-color-80 {
+          color: $C808080;
+        }
+        .span-pay {
+          border-radius: 0.1em;
+          background-color: $aqua_green;
+          margin: 0.1em 0em 0.1em 0.3em;
+          padding: 0.1em 0.3em 0.1em 0.3em;
+          font-weight: 100;
+          color: $white;
+          font-size: 0.7em;
+          line-height: 0.8em;
+          text-align: center;
+        }
+      }
+      .div-operation {
+        position: relative;
+        border-top: 0.5px solid $border;
+        text-align: right;
+        padding: 0.8em 1em;
+        button {
+          border: 0.5px solid $blue;
+          border-radius: 0.2em;
+          color: $blue;
+          font-weight: 200;
+          background: transparent;
+          line-height: 1;
+          text-align: center;
+          padding: 0.25em 0.8em;
+          font-size: 0.8m;
+          margin: 0 0;
+          vertical-align: middle;
+          outline: none;
+        }
+        .red-button {
+          border: 0.5px solid $hint;
+          color: $hint;
+        }
+      }
+    }
+    .item-divider {
+      margin-top: 1.5em;
+      height: 0.5em;
+      width: 100%;
+      background-color: #f5f5f5;
+    }
+  }
+
+  .publish-ad {
+    padding: 1em 0em;
+    padding-top: 5.4em;
+    background: #f7f7f7;
+    padding-bottom: 0px;
+    .publish-trade-tip-item {
+      display: flex;
+      padding: 0.5em 1em;
+      background: $white;
+      margin-bottom: 0.45em;
+      box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+      img {
+        width: 1.3em;
+        height: 1.3em;
+        margin-left: 0.3em;
+        // src: '../assets/image/icon_pay_check_n.png';
+      }
+      .span-left {
+        float: left;
+        color: $C404040;
+        font-size: 0.8em;
+        padding-top: 0.2em;
+      }
+      .span-right {
+        flex: 1;
+        // border-bottom: $main solid 1px;
+        color: $main;
+        font-size: 0.8em;
+
+        text-align: right;
+      }
+    }
+    .publish-trade-type-item {
+      display: flex;
+      padding: 0.5em 1em;
+      background: $white;
+      margin-bottom: 0.45em;
+      div {
+        border-bottom: rgba(0, 0, 0, 0.12) solid 0px;
+        width: 100%;
+        flex: 1;
+        margin-left: 1em;
+        .mu-radio {
+          position: relative;
+          display: inline-block;
+          height: 12px;
+          line-height: 12px;
+          cursor: pointer;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          float: left;
+          margin-right: 1.5em;
+          /deep/ .mu-radio-wrapper {
+            .mu-radio-label {
+              color: $silver;
+              font-size: 01em;
+            }
+          }
+          /deep/ .mu-radio-icon {
+            margin-right: 0.3em;
+          }
+          /deep/ .mu-radio-icon-uncheck {
+            color: $border;
+            width: 1.4em;
+            height: 1.4em;
+            margin-top: 0.1em;
+          }
+
+          /deep/ .mu-radio-icon-checked {
+            color: $blue;
+            width: 1.4em;
+            height: 1.4em;
+            margin-top: 0.1em;
+          }
+        }
+        .activeRadio {
+          /deep/ .mu-radio-wrapper {
+            .mu-radio-label {
+              color: $blue;
+            }
+          }
+        }
+      }
+      span {
+        color: $C808080;
+        font-size: 0.8em;
+        margin-right: 0.5em;
+        white-space: nowrap;
+        padding-top: 0.3em;
+        padding-bottom: 0.4em;
+      }
+    }
+    .publish-crypto-currency-item {
+      display: flex;
+      padding: 0.5em 1em;
+      background: $white;
+      margin-bottom: 0em;
+      position: relative;
+
+      p {
+        position: absolute;
+        bottom: 0.6em;
+        left: 1.2em;
+        margin: 0 0;
+        padding: 0 0 0 0em;
+        color: $hint;
+        font-size: 0.85em;
+      }
+      span {
+        color: $C808080;
+        font-size: 0.8em;
+        margin-right: 0.5em;
+        width: 7em;
+        display: inline-block;
+        text-align: left;
+        padding-top: 0.68em;
+      }
+      .mu-dropDown-menu-text-overflow {
+        white-space: nowrap;
+        overflow: hidden;
+        width: 100%;
+        text-align: left;
+
+        /deep/ .mu-text-field-content {
+          padding-top: 0px;
+          padding-bottom: 0px;
+          /deep/.mu-dropDown-menu {
+            font-size: 1em;
+          }
+          /deep/.mu-text-field-focus-line {
+            height: 0px;
+          }
+          /deep/.mu-text-field-line {
+            height: 0px;
+          }
+        }
+      }
+    }
+    .hint-zone {
+      padding: 0em 1em;
+      background: $white;
+      text-align: left;
+      p {
+        border-top: 1px solid $border;
+        margin: 0px;
+        font-size: 0.85em;
+        line-height: 2.2;
+        color: $hint;
+      }
+      margin-bottom: 0.45em;
+      box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+    }
+    .hint-zone1 {
+      background: $white;
+      text-align: left;
+      p {
+        border-top: 1px solid $border;
+        margin: 0px;
+        font-size: 0.85em;
+        line-height: 2.2;
+        color: $hint;
+      }
+      margin-bottom: 0.45em;
+      box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+    }
+
+    .publish-trade-currency-item {
+      display: flex;
+      padding: 0.5em 1em;
+      background: $white;
+      margin-bottom: 0em;
+      position: relative;
+      span {
+        color: $C808080;
+        font-size: 0.8em;
+        margin-right: 0.5em;
+        width: 7em;
+        display: inline-block;
+        text-align: left;
+        padding-top: 0.68em;
+      }
+      .mu-dropDown-menu-text-overflow {
+        white-space: nowrap;
+        overflow: hidden;
+        width: 100%;
+        text-align: left;
+        /deep/ .mu-text-field-content {
+          padding-top: 0px;
+          padding-bottom: 0px;
+          /deep/.mu-dropDown-menu {
+            font-size: 1em;
+          }
+          /deep/.mu-text-field-focus-line {
+            height: 0px;
+          }
+          /deep/.mu-text-field-line {
+            height: 0px;
+          }
+        }
+      }
+    }
+    .publish-trade-price-type-item {
+      display: flex;
+      border-top: 1px solid $border;
+      padding: 0.5em 0px;
+      div {
+        border-bottom: rgba(0, 0, 0, 0.12) solid 0px;
+        width: 100%;
+        flex: 1;
+        margin-left: 1em;
+        .mu-radio {
+          position: relative;
+          display: inline-block;
+          height: 12px;
+          line-height: 12px;
+          cursor: pointer;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          float: left;
+          margin-right: 1.5em;
+          /deep/ .mu-radio-wrapper {
+            .mu-radio-label {
+              color: $silver;
+              font-size: 01em;
+            }
+          }
+          /deep/ .mu-radio-icon {
+            margin-right: 0.3em;
+          }
+          /deep/ .mu-radio-icon-uncheck {
+            color: $border;
+            width: 1.4em;
+            height: 1.4em;
+            margin-top: 0.1em;
+          }
+
+          /deep/ .mu-radio-icon-checked {
+            color: $blue;
+            width: 1.4em;
+            height: 1.4em;
+            margin-top: 0.1em;
+          }
+        }
+        .activeRadio {
+          /deep/ .mu-radio-wrapper {
+            .mu-radio-label {
+              color: $blue;
+            }
+          }
+        }
+      }
+      span {
+        color: $C808080;
+        font-size: 0.8em;
+        margin-right: 0.5em;
+        white-space: nowrap;
+        padding-top: 0.3em;
+        padding-bottom: 0.4em;
+      }
+    }
+    .publish-trade-price-currency-item {
+      display: flex;
+      border-top: 1px solid $border;
+      padding: 0.8em 0px;
+      span {
+        color: #808080;
+        font-size: 0.8em;
+        margin-right: 0.5em;
+        display: inline-block;
+        text-align: left;
+      }
+      div {
+        border-bottom: rgba(0, 0, 0, 0.12) solid 0px;
+        width: 100%;
+        flex: 1;
+        text-align: left;
+        padding: 0em 0 0.1em 1.1em;
+        line-height: 1;
+        position: relative;
+        top: 0.1em;
+      }
+    }
+    .publish-item-p {
+      margin: 2em 0 0.3em 0;
+      padding: 0 0;
+      font-size: 0.6em;
+      color: $orange_red;
+      text-align: left;
+    }
+    .publish-auto-taken-item {
+      display: flex;
+      div {
+        border-bottom: rgba(0, 0, 0, 0.12) solid 1px;
+        width: 100%;
+        flex: 1;
+        .mu-radio {
+          position: relative;
+          display: inline-block;
+          height: 12px;
+          line-height: 12px;
+          cursor: pointer;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          float: left;
+          margin-right: 1em;
+        }
+      }
+      span {
+        color: $C808080;
+        font-size: 0.8em;
+        margin-right: 0.5em;
+        white-space: nowrap;
+        padding-top: 0.3em;
+        padding-bottom: 0.5em;
+      }
+    }
+    .publish-safe-price-currency-item {
+      display: flex;
+      border-top: 1px solid $border;
+      position: relative;
+      padding: 0.8em 0px;
+      font-size: 0.8em;
+      position: relative;
+      p {
+        position: absolute;
+        text-align: left;
+      }
+      span {
+        color: $C808080;
+        font-size: 1em;
+        margin-right: 0.5em;
+        white-space: nowrap;
+        padding-top: 0.45em;
+        display: inline-block;
+        width: 7em;
+        text-align: left;
+      }
+      .mu-text-field-input {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        outline: none;
+        border: none;
+        background: none;
+        border-radius: 0 0 0 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        display: block;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 2.1em;
+        font-style: inherit;
+        font-variant: inherit;
+        font-weight: inherit;
+        font-stretch: inherit;
+        font-size: 1em;
+        color: rgba(0, 0, 0, 0.87);
+        font-family: inherit;
+        position: relative;
+        text-align: left;
+        font-size: 1.2em;
+        /deep/ .mu-text-field-content {
+          padding: 0px;
+        }
+        /deep/ .mu-text-field-line {
+          height: 0px;
+        }
+        /deep/ .mu-text-field-focus-line {
+          height: 0px;
+        }
+      }
+    }
+    .hint-zone-big {
+      padding-left: 1em;
+      background: $white;
+      box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+    }
+    .hint-bottom-font {
+      margin: 0px !important;
+      text-align: left !important;
+      color: $hint !important;
+      font-size: 0.85em !important;
+      line-height: 1 !important;
+      position: absolute !important;
+      top: 0.8em !important;
+      right: 1.5em !important;
+    }
+    .img-right-question {
+      margin: 0px !important;
+      position: absolute !important;
+      top: 1.5em !important;
+      right: 1.5em !important;
+      width: 1.5em;
+      height: 1.5em;
+    }
+    .publish-safe-price-currency-item1 {
+      display: flex;
+      background: $white;
+      padding: 0.5em 1em;
+      position: relative;
+      span {
+        color: #808080;
+        font-size: 0.8em;
+        margin-right: 0.5em;
+        width: 7em;
+        display: inline-block;
+        text-align: left;
+        padding-top: 0.5em;
+      }
+
+      .mu-text-field-input {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        outline: none;
+        border: none;
+        background: none;
+        border-radius: 0 0 0 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        display: block;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 2.1em;
+        font-style: inherit;
+        font-variant: inherit;
+        font-weight: inherit;
+        font-stretch: inherit;
+        font-size: 1em;
+        color: rgba(0, 0, 0, 0.87);
+        font-family: inherit;
+        position: relative;
+        text-align: left;
+        /deep/ .mu-text-field-content {
+          padding: 0px;
+        }
+        /deep/ .mu-text-field-line {
+          height: 0px;
+        }
+        /deep/ .mu-text-field-focus-line {
+          height: 0px;
+        }
+      }
+      .mu-text-field-content {
+        white-space: nowrap;
+        overflow: hidden;
+        width: 100%;
+        text-align: left;
+        /deep/ .mu-text-field-content {
+          padding-top: 0px;
+          padding-bottom: 0px;
+          /deep/.mu-text-field-focus-line {
+            height: 0px;
+          }
+          /deep/.mu-text-field-line {
+            height: 0px;
+          }
+        }
+      }
+      .img-right-question1 {
+        margin: 0px !important;
+        position: absolute !important;
+        top: 1.3em !important;
+        right: 1.5em !important;
+        width: 1.2em;
+        height: 1.2em;
+      }
+    }
+    .publish-pay-item {
+      margin-top: 0.5em;
+      padding: 0px 1em;
+      background: $white;
+      p {
+        color: #808080;
+        font-size: 0.8em;
+        margin-right: 0.5em;
+        white-space: nowrap;
+        line-height: 1em;
+        text-align: left;
+        margin: 0 0;
+        padding: 1em 0;
+      }
+      div {
+        display: flex;
+        margin-top: 0.3em;
+        img {
+          width: 2.5em;
+          height: 2em;
+          margin-right: 0.3em;
+        }
+        i {
+          width: 1.5em;
+          height: 1.5em;
+          margin-right: 1.2em;
+          margin-top: 0.2em;
+        }
+        .publish-pay-item-img-check {
+          width: 1.8em;
+          height: 1.8em;
+          background: url("../assets/image/icon_pay_check_n.png") no-repeat
+            center;
+          margin-top: 0.2em;
+          margin-right: 1em;
+          margin-left: 0.1em;
+        }
+        i.img_n {
+          background: url("../assets/image/icon_pay_check_n.png") no-repeat
+            center;
+          background-size: 100%;
+        }
+        i.img_p {
+          background: url("../assets/image/icon_pay_check_p.png") no-repeat
+            center;
+          background-size: 100%;
+        }
+      }
+    }
+
+    .btn {
+      line-height: 2.4;
+      font-size: 1.12em;
+      height: auto;
+      margin-top: 1.2em;
+      margin-bottom: 1.3em;
+      background: $blue;
+    }
+  }
+
+  .top-order {
+    width: 100%;
+    height: 3em;
+    background: $topBg;
+    .left-order {
+      position: absolute;
+      top: 0.8em;
+      left: 1em;
+      width: 1.35em;
+      height: 1.35em;
+      background: url("../assets/image/arrow_left.png") no-repeat center;
+      background-size: cover;
+      button {
+        background: transparent;
+      }
+    }
+    .center-order {
+      position: absolute;
+      width: 100%;
+      top: 1em;
+      color: $white;
+      font-size: 1em;
+      text-align: center;
+      line-height: 1;
+    }
+    .right-order {
+      position: absolute;
+      right: 1em;
+      top: 1em;
+      color: $white;
+      font-size: 1em;
+    }
+  }
+
+  .buy-item-info-order {
+    display: flex;
+    margin: 0 0;
+    padding: 1em;
+    background: $white;
+    margin-bottom: 0.8em;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+    .buy-item-info-head-order {
+      width: 2.5em;
+      height: 2.5em;
+      border-radius: 100%;
+      background: $blue;
+      color: $white;
+      line-height: 2.5em;
+      text-align: center;
+      font-size: 1.5em;
+      font-weight: 300;
+      margin-top: 0.35em;
+      margin-right: 0.5em;
+    }
+    .buy-item-info-head-online-order {
+      width: 0.8em;
+      height: 0.8em;
+      border-radius: 100%;
+      background: rgb(8, 223, 8);
+      margin: 3.3em 0em 0em -0.8em;
+      padding: 0 0;
+    }
+    .buy-item-info-head-center-order {
+      float: 1;
+      flex: 1;
+      h4 {
+        margin: 0.2em 0 0 0;
+        line-height: 1em;
+        font-size: 1em;
+        text-align: left;
+        padding: 0.2em 0em 0.2em 0em;
+        font-weight: 600;
+        color: $blue;
+        span {
+          border-radius: 0.1em;
+          background-color: $aqua_green;
+          margin: 0.1em 0em 0.1em 0.5em;
+          padding: 0.1em 0.3em 0.1em 0.3em;
+          font-weight: 100;
+          color: $white;
+          font-size: 0.7em;
+          line-height: 0.8em;
+          text-align: center;
+        }
+      }
+      p {
+        margin: 0.5em 0 0 0;
+        line-height: 1em;
+        font-size: 0.75em;
+        text-align: left;
+        padding: 0.2em 0em 0.2em 0em;
+        color: $C808080;
+        display: flex;
+      }
+      .p1-order {
+        margin: 0.2em 0 0 0;
+        line-height: 1em;
+        font-size: 0.5em;
+        text-align: left;
+        padding: 0.2em 0em 1em 1em;
+        color: $C808080;
+        display: flex;
+      }
+      .pay-order {
+        margin-top: 0.3em;
+        span {
+          display: inline-block;
+          margin-right: 0.5em;
+          border-radius: 0.3em;
+          background: $border-pay;
+          padding: 0.3em 0.5em 0.2em 0.5em;
+          line-height: 1;
+          color: $white;
+        }
+      }
+    }
+    .buy-item-info-head-right-order {
+      p {
+        text-align: right;
+        color: $tradeBuy;
+        margin: 0 0;
+        font-size: 1.5em;
+        font-weight: 600;
+        line-height: 1.2;
+        span {
+          font-weight: 400;
+          display: block;
+          font-size: 0.5em;
+          color: $CC1C1C1;
+        }
+      }
+      .isBuyright-order {
+        color: $tradeSell;
+      }
+    }
+  }
+
+  .buy-item-diver-order {
+    background: $CF5F5F5;
+    height: 0.3em;
+    width: 100%;
+  }
+  .wen_title-order {
+    text-align: left;
+    margin: 0.65em 0px;
+    margin-left: 1em;
+  }
+  .wen_title-order-tip {
+    text-align: left;
+    margin: 0px 0px;
+    padding: 0px 0px;
+    margin-left: 1em;
+    font-size: 0.7em;
+    color: $orange_red;
+  }
+  .buy-item-input-order {
+    margin: 0 0;
+    padding: 1em;
+    background: $white;
+    padding-bottom: 1.5em;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+    p {
+      text-align: left;
+      padding: 0 0;
+      margin: 0 0;
+      padding-bottom: 0.5em;
+      border-bottom: 1px solid $border;
+    }
+    .input-order {
+      width: 100%;
+      margin-top: 0.6em;
+      // padding: 1.5em 2.5em;
+      text-align: left;
+      .input-zone-order {
+        // text-align: left;
+        /deep/ .mu-text-field-focus-line {
+          margin: 0;
+          height: 1px;
+          border: none;
+          background-color: $blue;
+          position: absolute;
+          left: 0;
+          right: 0;
+          margin-top: -1px;
+          -webkit-transform: scaleX(0);
+          -ms-transform: scaleX(0);
+          transform: scaleX(0);
+          -webkit-transition: -webkit-transform 0.45s
+            cubic-bezier(0.23, 1, 0.32, 1);
+          transition: -webkit-transform 0.45s cubic-bezier(0.23, 1, 0.32, 1);
+          -o-transition: transform 0.45s cubic-bezier(0.23, 1, 0.32, 1);
+          transition: transform 0.45s cubic-bezier(0.23, 1, 0.32, 1);
+          transition: transform 0.45s cubic-bezier(0.23, 1, 0.32, 1),
+            -webkit-transform 0.45s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+      }
+    }
+  }
+
+  .buy-item-tip-order {
+    text-align: left;
+    margin: 0 0;
+    padding: 1em;
+    background: $white;
+    line-height: 1.8;
+    font-size: 0.7em;
+    p {
+      margin: 0px;
+      margin-bottom: 0.5em;
+      color: $ico;
+    }
+  }
+
+  .captcha-zone-order {
+    position: relative;
+    margin-bottom: 0.8em;
+    .div-send-code-order {
+      position: absolute;
+      bottom: 1em;
+      width: 4.5em;
+      height: 2em;
+      right: 0px;
+      background: transparent;
+      text-align: right;
+      color: $black;
+      line-height: 2em;
+    }
+    .div-send-code-order1 {
+      position: absolute;
+      bottom: 1.3em;
+      width: 4.5em;
+      height: 2em;
+      right: 0px;
+      background: transparent;
+      text-align: right;
+      color: $black;
+      line-height: 2em;
+    }
+    .captcha-zone-tip-order {
+      position: absolute;
+      top: -0.35em;
+      line-height: 0.7em;
+      margin: 0 0;
+      padding: 0 0;
+      font-size: 0.7em;
+      color: $blue;
+    }
+  }
+  .captcha-order {
+    position: absolute;
+    bottom: 1.4em;
+    width: 7.5em;
+    height: 2em;
+    right: 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .btn-order {
+    line-height: 2.4;
+    font-size: 1.12em;
+    height: auto;
+    margin-top: 0.5em;
+    background: $blue;
+  }
+  //////
+  .mu-toast {
+    height: 2.2em;
+    line-height: 2.2em;
+    padding: 0 2em;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    border-radius: 0.1em;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-wrap: break-word;
+    max-width: 100%;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    margin: 0 auto;
+    font-size: 1em;
+  }
+}
